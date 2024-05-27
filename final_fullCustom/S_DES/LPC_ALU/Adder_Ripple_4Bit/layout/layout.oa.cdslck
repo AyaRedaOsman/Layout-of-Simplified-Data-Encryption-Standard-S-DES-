@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      vlsi
+HostName                       elc-vlsi-ecng-31-lnx
+ProcessIdentifier              29131
+ProcessCreationTime_UTC        1714550170
+ProcessCreationTime_Readable   Wed May  1 10:56:10 2024 
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /home/vlsi/Desktop/LPC_ALU/LPC_ALU/Adder_Ripple_4Bit/layout/layout.oa.cdslck.dirlck
+TimeEditLocked                 Wed May  1 10:56:26 2024 

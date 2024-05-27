@@ -1,0 +1,9 @@
+# Automagically generated file: Please do not edit!
+lvs_ExtfVersion 3
+lvs_ExtRunTimes 1715357285 1715357285
+lvs_ExtOutFile RUNDIR /home/vlsi/FinalHHAF
+lvs_ExtOutFile RULES_FILE __Generic_250nm_LVS.cal__
+lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}
+lvs_ExtInfoDfmSummary {0}
+lvs_ExtOutFile LAYOUT_NETLIST OR.sp
+lvs_ExtOutFile EXTRACTION_REPORT OR.lvs.report.ext

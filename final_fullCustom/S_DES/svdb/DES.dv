@@ -1,0 +1,867 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/DES.dv
+dv_start unmatched                                
+dv_cell {DES} {DES} unmatched
+dv_obj_count -transformed_nets {312 324} -transformed_inst {299 304} -transformed_port {28 28}
+dv_discrep 1 {Incorrect Nets} -inst_count { 6 4}
+dv_discrep_line {Net } -lnet {cipher_text3} {                                          } -snet {cipher_text3} {}
+dv_discrep_line {--- 6 Connections On This Net ---                         --- 4 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(_invv):}  {in} {                                                ** missing connection **}
+dv_discrep_line {  } -ldev {X1/X7/X0/X1/M0} {} -lloc {(-107.560,147.770)} {:}  {g} {}
+dv_discrep_line {  } -ldev {X1/X7/X0/X0/M0} {} -lloc {(-107.560,150.365)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {(_xor2v):}  {out} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X0/X8/X9/M0} {} -lloc {(-178.755,319.230)} {:}  {s} {}
+dv_discrep_line {  } -ldev {X0/X8/X8/M0} {} -lloc {(-177.505,319.230)} {:}  {d} {}
+dv_discrep_line {  } -ldev {X0/X8/X4/M0} {} -lloc {(-177.755,316.055)} {:}  {s} {}
+dv_discrep_line {  } -ldev {X0/X8/X5/M0} {} -lloc {(-178.505,316.055)} {:}  {s} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {(_smn2v):}  {in2} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X1/X7/X6/M0} {} -lloc {(-102.430,147.450)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {X1/X7/X2/M0} {} -lloc {(-102.680,150.405)} {:}  {g} {                           ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_xor2v):}  {out} {}
+dv_discrep_line {                                                            } -sdev {XFeistel_1/XXOR_12/MMn2} {:}  {s} {}
+dv_discrep_line {                                                            } -sdev {XFeistel_1/XXOR_12/MMn1} {:}  {d} {}
+dv_discrep_line {                                                            } -sdev {XFeistel_1/XXOR_12/MMp3} {:}  {s} {}
+dv_discrep_line {                                                            } -sdev {XFeistel_1/XXOR_12/MMp1} {:}  {s} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_xor2v):}  {in1} {}
+dv_discrep_line {                                                            } -sdev {XFeistel_2/XXOR_3/XINV_1/MMn1} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {XFeistel_2/XXOR_3/XINV_1/MMp1} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {XFeistel_2/XXOR_3/MMn4} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {XFeistel_2/XXOR_3/MMp2} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 2 {Incorrect Nets} -inst_count { 4 4}
+dv_discrep_line {Net } -lnet {cipher_text4} {                                          } -snet {cipher_text4} {}
+dv_discrep_line {--- 4 Connections On This Net ---                         --- 4 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(_xor2v):}  {out} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X0/X10/X7/M0} {} -lloc {(-170.845,66.020)} {:}  {s} {}
+dv_discrep_line {  } -ldev {X0/X10/X6/M0} {} -lloc {(-170.095,66.020)} {:}  {d} {}
+dv_discrep_line {  } -ldev {X0/X10/X2/M0} {} -lloc {(-169.845,68.975)} {:}  {s} {}
+dv_discrep_line {  } -ldev {X0/X10/X3/M0} {} -lloc {(-171.095,68.975)} {:}  {s} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_xor2v):}  {out} {}
+dv_discrep_line {                                                            } -sdev {XFeistel_1/XXOR_9/MMn2} {:}  {s} {}
+dv_discrep_line {                                                            } -sdev {XFeistel_1/XXOR_9/MMn1} {:}  {d} {}
+dv_discrep_line {                                                            } -sdev {XFeistel_1/XXOR_9/MMp3} {:}  {s} {}
+dv_discrep_line {                                                            } -sdev {XFeistel_1/XXOR_9/MMp1} {:}  {s} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 3 {Incorrect Nets} -inst_count { 3 3}
+dv_discrep_line {Net } -lnet {key<5>} {                                                } -snet {key<5>} {}
+dv_discrep_line {--- 3 Connections On This Net ---                         --- 3 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(_xor2v):}  {in2} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X0/X0/X1/X1/M0} {} -lloc {(-346.780,276.670)} {:}  {g} {}
+dv_discrep_line {  } -ldev {X0/X0/X1/X0/M0} {} -lloc {(-346.780,279.265)} {:}  {g} {}
+dv_discrep_line {  } -ldev {X0/X0/X8/M0} {} -lloc {(-352.395,276.290)} {:}  {g} {}
+dv_discrep_line {  } -ldev {X0/X0/X4/M0} {} -lloc {(-352.145,279.465)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {(_xor2v):}  {in1} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X1/X3/X1/X1/M0} {} -lloc {(-96.985,95.270)} {:}  {g} {}
+dv_discrep_line {  } -ldev {X1/X3/X1/X0/M0} {} -lloc {(-96.985,97.865)} {:}  {g} {}
+dv_discrep_line {  } -ldev {X1/X3/X8/M0} {} -lloc {(-102.600,94.890)} {:}  {g} {}
+dv_discrep_line {  } -ldev {X1/X3/X4/M0} {} -lloc {(-102.350,98.065)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  } -sdev {XKey_Generation_1/VPassThru11} {:}  {pos} {}
+dv_discrep_line {** missing connection **                                  } -sdev {XKey_Generation_1/VPassThru8} {:}  {pos} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 4 {Incorrect Nets} -inst_count { 3 3}
+dv_discrep_line {Net } -lnet {key<9>} {                                                } -snet {key<9>} {}
+dv_discrep_line {--- 3 Connections On This Net ---                         --- 3 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(_xor2v):}  {in1} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X1/X5/X1/X1/M0} {} -lloc {(-92.075,352.825)} {:}  {g} {}
+dv_discrep_line {  } -ldev {X1/X5/X1/X0/M0} {} -lloc {(-92.075,355.420)} {:}  {g} {}
+dv_discrep_line {  } -ldev {X1/X5/X8/M0} {} -lloc {(-97.690,352.445)} {:}  {g} {}
+dv_discrep_line {  } -ldev {X1/X5/X4/M0} {} -lloc {(-97.440,355.620)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {(_xor2v):}  {in2} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X0/X1/X1/X1/M0} {} -lloc {(-346.725,291.075)} {:}  {g} {}
+dv_discrep_line {  } -ldev {X0/X1/X1/X0/M0} {} -lloc {(-346.725,293.670)} {:}  {g} {}
+dv_discrep_line {  } -ldev {X0/X1/X8/M0} {} -lloc {(-352.340,290.695)} {:}  {g} {}
+dv_discrep_line {  } -ldev {X0/X1/X4/M0} {} -lloc {(-352.090,293.870)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  } -sdev {XKey_Generation_1/VPassThru13} {:}  {pos} {}
+dv_discrep_line {** missing connection **                                  } -sdev {XKey_Generation_1/VPassThru7} {:}  {pos} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 5 {Incorrect Nets} -inst_count { 2 3}
+dv_discrep_line {Net } -lnet {key<8>} {                                                } -snet {key<8>} {}
+dv_discrep_line {--- 2 Connections On This Net ---                         --- 3 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(_xor2v):}  {in2} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X0/X3/X1/X1/M0} {} -lloc {(-346.160,95.270)} {:}  {g} {}
+dv_discrep_line {  } -ldev {X0/X3/X1/X0/M0} {} -lloc {(-346.160,97.865)} {:}  {g} {}
+dv_discrep_line {  } -ldev {X0/X3/X8/M0} {} -lloc {(-351.775,94.890)} {:}  {g} {}
+dv_discrep_line {  } -ldev {X0/X3/X4/M0} {} -lloc {(-351.525,98.065)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  } -sdev {XKey_Generation_1/VPassThru16} {:}  {pos} {}
+dv_discrep_line {** missing connection **                                  } -sdev {XKey_Generation_1/VPassThru2} {:}  {pos} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 6 {Incorrect Nets} -inst_count { 7 3}
+dv_discrep_line {Net } -lnet {key<2>} {                                                } -snet {key<2>} {}
+dv_discrep_line {--- 7 Connections On This Net ---                         --- 3 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(_invv):}  {in} {                                                ** missing connection **}
+dv_discrep_line {  } -ldev {X1/X7/X1/X1/M0} {} -lloc {(-91.400,147.770)} {:}  {g} {}
+dv_discrep_line {  } -ldev {X1/X7/X1/X0/M0} {} -lloc {(-91.400,150.365)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {(_xor2v):}  {in2} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X0/X4/X1/X1/M0} {} -lloc {(-341.425,342.365)} {:}  {g} {}
+dv_discrep_line {  } -ldev {X0/X4/X1/X0/M0} {} -lloc {(-341.425,344.960)} {:}  {g} {}
+dv_discrep_line {  } -ldev {X0/X4/X8/M0} {} -lloc {(-347.040,341.985)} {:}  {g} {}
+dv_discrep_line {  } -ldev {X0/X4/X4/M0} {} -lloc {(-346.790,345.160)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {(_smn2v):}  {in1} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X1/X7/X8/M0} {} -lloc {(-97.015,147.390)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {(_smp2v):}  {in1} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X1/X7/X4/M0} {} -lloc {(-96.765,150.565)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {X1/X7/X5/M0} {} -lloc {(-96.015,150.565)} {:}  {d} {                            ** missing connection **}
+dv_discrep_line {} -ldev {X1/X7/X2/M0} {} -lloc {(-102.680,150.405)} {:}  {s} {                           ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  } -sdev {XKey_Generation_1/VPassThru10} {:}  {pos} {}
+dv_discrep_line {** missing connection **                                  } -sdev {XKey_Generation_1/VPassThru6} {:}  {pos} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 7 {Incorrect Nets} -inst_count { 3 3}
+dv_discrep_line {Net } -lnet {key<7>} {                                                } -snet {key<7>} {}
+dv_discrep_line {--- 3 Connections On This Net ---                         --- 3 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(_xor2v):}  {in1} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X1/X6/X1/X1/M0} {} -lloc {(-91.450,156.830)} {:}  {g} {}
+dv_discrep_line {  } -ldev {X1/X6/X1/X0/M0} {} -lloc {(-91.450,159.425)} {:}  {g} {}
+dv_discrep_line {  } -ldev {X1/X6/X8/M0} {} -lloc {(-97.065,156.450)} {:}  {g} {}
+dv_discrep_line {  } -ldev {X1/X6/X4/M0} {} -lloc {(-96.815,159.625)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {(_xor2v):}  {in2} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X0/X5/X1/X1/M0} {} -lloc {(-341.250,352.825)} {:}  {g} {}
+dv_discrep_line {  } -ldev {X0/X5/X1/X0/M0} {} -lloc {(-341.250,355.420)} {:}  {g} {}
+dv_discrep_line {  } -ldev {X0/X5/X8/M0} {} -lloc {(-346.865,352.445)} {:}  {g} {}
+dv_discrep_line {  } -ldev {X0/X5/X4/M0} {} -lloc {(-346.615,355.620)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  } -sdev {XKey_Generation_1/VPassThru9} {:}  {pos} {}
+dv_discrep_line {** missing connection **                                  } -sdev {XKey_Generation_1/VPassThru5} {:}  {pos} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 8 {Incorrect Nets} -inst_count { 3 3}
+dv_discrep_line {Net } -lnet {key<0>} {                                                } -snet {key<0>} {}
+dv_discrep_line {--- 3 Connections On This Net ---                         --- 3 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(_xor2v):}  {in1} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X1/X1/X1/X1/M0} {} -lloc {(-97.550,291.075)} {:}  {g} {}
+dv_discrep_line {  } -ldev {X1/X1/X1/X0/M0} {} -lloc {(-97.550,293.670)} {:}  {g} {}
+dv_discrep_line {  } -ldev {X1/X1/X8/M0} {} -lloc {(-103.165,290.695)} {:}  {g} {}
+dv_discrep_line {  } -ldev {X1/X1/X4/M0} {} -lloc {(-102.915,293.870)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {(_xor2v):}  {in2} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X0/X6/X1/X1/M0} {} -lloc {(-340.625,156.830)} {:}  {g} {}
+dv_discrep_line {  } -ldev {X0/X6/X1/X0/M0} {} -lloc {(-340.625,159.425)} {:}  {g} {}
+dv_discrep_line {  } -ldev {X0/X6/X8/M0} {} -lloc {(-346.240,156.450)} {:}  {g} {}
+dv_discrep_line {  } -ldev {X0/X6/X4/M0} {} -lloc {(-345.990,159.625)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  } -sdev {XKey_Generation_1/VPassThru15} {:}  {pos} {}
+dv_discrep_line {** missing connection **                                  } -sdev {XKey_Generation_1/VPassThru3} {:}  {pos} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 9 {Incorrect Nets} -inst_count { 2 2}
+dv_discrep_line {Net } -lnet {key<3>} {                                                } -snet {key<3>} {}
+dv_discrep_line {--- 2 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(_xor2v):}  {in2} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X0/X2/X1/X1/M0} {} -lloc {(-346.500,81.325)} {:}  {g} {}
+dv_discrep_line {  } -ldev {X0/X2/X1/X0/M0} {} -lloc {(-346.500,83.920)} {:}  {g} {}
+dv_discrep_line {  } -ldev {X0/X2/X8/M0} {} -lloc {(-352.115,80.945)} {:}  {g} {}
+dv_discrep_line {  } -ldev {X0/X2/X4/M0} {} -lloc {(-351.865,84.120)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  } -sdev {XKey_Generation_1/VPassThru4} {:}  {pos} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 10 {Incorrect Nets} -inst_count { 2 2}
+dv_discrep_line {Net } -lnet {key<6>} {                                                } -snet {key<6>} {}
+dv_discrep_line {--- 2 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(_xor2v):}  {in2} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X0/X7/X1/X1/M0} {} -lloc {(-340.575,147.770)} {:}  {g} {}
+dv_discrep_line {  } -ldev {X0/X7/X1/X0/M0} {} -lloc {(-340.575,150.365)} {:}  {g} {}
+dv_discrep_line {  } -ldev {X0/X7/X8/M0} {} -lloc {(-346.190,147.390)} {:}  {g} {}
+dv_discrep_line {  } -ldev {X0/X7/X4/M0} {} -lloc {(-345.940,150.565)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  } -sdev {XKey_Generation_1/VPassThru1} {:}  {pos} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 11 {Incorrect Nets} -inst_count { 2 2}
+dv_discrep_line {Net } -lnet {key<4>} {                                                } -snet {key<4>} {}
+dv_discrep_line {--- 2 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(_xor2v):}  {in1} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X1/X2/X1/X1/M0} {} -lloc {(-97.325,81.325)} {:}  {g} {}
+dv_discrep_line {  } -ldev {X1/X2/X1/X0/M0} {} -lloc {(-97.325,83.920)} {:}  {g} {}
+dv_discrep_line {  } -ldev {X1/X2/X8/M0} {} -lloc {(-102.940,80.945)} {:}  {g} {}
+dv_discrep_line {  } -ldev {X1/X2/X4/M0} {} -lloc {(-102.690,84.120)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  } -sdev {XKey_Generation_1/VPassThru12} {:}  {pos} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 12 {Incorrect Nets} -inst_count { 2 2}
+dv_discrep_line {Net } -lnet {key<1>} {                                                } -snet {key<1>} {}
+dv_discrep_line {--- 2 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(_xor2v):}  {in1} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X1/X4/X1/X1/M0} {} -lloc {(-92.250,342.365)} {:}  {g} {}
+dv_discrep_line {  } -ldev {X1/X4/X1/X0/M0} {} -lloc {(-92.250,344.960)} {:}  {g} {}
+dv_discrep_line {  } -ldev {X1/X4/X8/M0} {} -lloc {(-97.865,341.985)} {:}  {g} {}
+dv_discrep_line {  } -ldev {X1/X4/X4/M0} {} -lloc {(-97.615,345.160)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  } -sdev {XKey_Generation_1/VPassThru14} {:}  {pos} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 13 {Incorrect Nets} -inst_count { 3 0}
+dv_discrep_line {Net } -lnet {X1/91} {                                                 ** no similar net **}
+dv_discrep_line {}
+dv_discrep 14 {Incorrect Nets} -inst_count { 3 0}
+dv_discrep_line {Net } -lnet {X1/X7/11} {                                              ** no similar net **}
+dv_discrep_line {}
+dv_discrep 15 {Incorrect Nets} -inst_count { 3 0}
+dv_discrep_line {Net } -lnet {X1/X11/11} {                                             ** no similar net **}
+dv_discrep_line {}
+dv_discrep 16 {Incorrect Nets} -inst_count { 0 2}
+dv_discrep_line {** no similar net **                                      } -snet {N_1} {}
+dv_discrep_line {}
+dv_discrep 17 {Incorrect Nets} -inst_count { 0 2}
+dv_discrep_line {** no similar net **                                      } -snet {N_3} {}
+dv_discrep_line {}
+dv_discrep 18 {Incorrect Nets} -inst_count { 0 2}
+dv_discrep_line {** no similar net **                                      } -snet {N_5} {}
+dv_discrep_line {}
+dv_discrep 19 {Incorrect Nets} -inst_count { 0 2}
+dv_discrep_line {** no similar net **                                      } -snet {N_7} {}
+dv_discrep_line {}
+dv_discrep 20 {Incorrect Nets} -inst_count { 0 2}
+dv_discrep_line {** no similar net **                                      } -snet {N_9} {}
+dv_discrep_line {}
+dv_discrep 21 {Incorrect Nets} -inst_count { 0 2}
+dv_discrep_line {** no similar net **                                      } -snet {N_11} {}
+dv_discrep_line {}
+dv_discrep 22 {Incorrect Nets} -inst_count { 0 2}
+dv_discrep_line {** no similar net **                                      } -snet {N_13} {}
+dv_discrep_line {}
+dv_discrep 23 {Incorrect Nets} -inst_count { 0 2}
+dv_discrep_line {** no similar net **                                      } -snet {N_15} {}
+dv_discrep_line {}
+dv_discrep 24 {Incorrect Nets} -inst_count { 0 2}
+dv_discrep_line {** no similar net **                                      } -snet {N_2} {}
+dv_discrep_line {}
+dv_discrep 25 {Incorrect Nets} -inst_count { 0 2}
+dv_discrep_line {** no similar net **                                      } -snet {N_4} {}
+dv_discrep_line {}
+dv_discrep 26 {Incorrect Nets} -inst_count { 0 2}
+dv_discrep_line {** no similar net **                                      } -snet {N_6} {}
+dv_discrep_line {}
+dv_discrep 27 {Incorrect Nets} -inst_count { 0 2}
+dv_discrep_line {** no similar net **                                      } -snet {N_8} {}
+dv_discrep_line {}
+dv_discrep 28 {Incorrect Nets} -inst_count { 0 2}
+dv_discrep_line {** no similar net **                                      } -snet {N_10} {}
+dv_discrep_line {}
+dv_discrep 29 {Incorrect Nets} -inst_count { 0 2}
+dv_discrep_line {** no similar net **                                      } -snet {N_12} {}
+dv_discrep_line {}
+dv_discrep 30 {Incorrect Nets} -inst_count { 0 2}
+dv_discrep_line {** no similar net **                                      } -snet {N_14} {}
+dv_discrep_line {}
+dv_discrep 31 {Incorrect Instances}
+dv_discrep_line {} -ldev {X1/X7/X2/M0} {} -lloc {(-102.680,150.405)} {  MP(PMOS25)                 ** missing instance **}
+dv_discrep_line {}
+dv_discrep 32 {Incorrect Instances}
+dv_discrep_line {} -ldev {X1/X7/X5/M0} {} -lloc {(-96.015,150.565)} {  MP(PMOS25)                  ** missing instance **}
+dv_discrep_line {}
+dv_discrep 33 {Incorrect Instances}
+dv_discrep_line {(_smp2v)                                                  ** missing injected instance **}
+dv_discrep_line {}
+dv_discrep_line {Devices: }
+dv_discrep_line {  } -ldev {X1/X7/X4/M0} {} -lloc {(-96.765,150.565)} {  MP(PMOS25)}
+dv_discrep_line {  } -ldev {X1/X7/X3/M0} {} -lloc {(-101.430,150.405)} {  MP(PMOS25)}
+dv_discrep_line {}
+dv_discrep 34 {Incorrect Instances}
+dv_discrep_line {(_smn2v)                                                  ** missing injected instance **}
+dv_discrep_line {}
+dv_discrep_line {Devices: }
+dv_discrep_line {  } -ldev {X1/X7/X9/M0} {} -lloc {(-95.765,147.390)} {  MN(NMOS25)}
+dv_discrep_line {  } -ldev {X1/X7/X7/M0} {} -lloc {(-101.680,147.450)} {  MN(NMOS25)}
+dv_discrep_line {}
+dv_discrep 35 {Incorrect Instances}
+dv_discrep_line {(_smn2v)                                                  ** missing injected instance **}
+dv_discrep_line {}
+dv_discrep_line {Devices: }
+dv_discrep_line {  } -ldev {X1/X7/X8/M0} {} -lloc {(-97.015,147.390)} {  MN(NMOS25)}
+dv_discrep_line {  } -ldev {X1/X7/X6/M0} {} -lloc {(-102.430,147.450)} {  MN(NMOS25)}
+dv_discrep_line {}
+dv_discrep 36 {Incorrect Instances}
+dv_discrep_line {(_smp2v)                                                  ** missing injected instance **}
+dv_discrep_line {}
+dv_discrep_line {Devices: }
+dv_discrep_line {  } -ldev {X1/X11/X4/M0} {} -lloc {(74.055,120.870)} {  MP(PMOS25)}
+dv_discrep_line {  } -ldev {X1/X11/X3/M0} {} -lloc {(78.720,121.030)} {  MP(PMOS25)}
+dv_discrep_line {}
+dv_discrep 37 {Incorrect Instances}
+dv_discrep_line {(_smp2v)                                                  ** missing injected instance **}
+dv_discrep_line {}
+dv_discrep_line {Devices: }
+dv_discrep_line {  } -ldev {X1/X11/X5/M0} {} -lloc {(73.305,120.870)} {  MP(PMOS25)}
+dv_discrep_line {  } -ldev {X1/X11/X2/M0} {} -lloc {(79.970,121.030)} {  MP(PMOS25)}
+dv_discrep_line {}
+dv_discrep 38 {Incorrect Instances}
+dv_discrep_line {(_smn2v)                                                  ** missing injected instance **}
+dv_discrep_line {}
+dv_discrep_line {Devices: }
+dv_discrep_line {  } -ldev {X1/X11/X9/M0} {} -lloc {(73.055,124.045)} {  MN(NMOS25)}
+dv_discrep_line {  } -ldev {X1/X11/X7/M0} {} -lloc {(78.970,123.985)} {  MN(NMOS25)}
+dv_discrep_line {}
+dv_discrep 39 {Incorrect Instances}
+dv_discrep_line {(_smn2v)                                                  ** missing injected instance **}
+dv_discrep_line {}
+dv_discrep_line {Devices: }
+dv_discrep_line {  } -ldev {X1/X11/X8/M0} {} -lloc {(74.305,124.045)} {  MN(NMOS25)}
+dv_discrep_line {  } -ldev {X1/X11/X6/M0} {} -lloc {(79.720,123.985)} {  MN(NMOS25)}
+dv_discrep_line {}
+dv_discrep 40 {Incorrect Instances}
+dv_discrep_line {(_invv)                                                   ** missing injected instance **}
+dv_discrep_line {}
+dv_discrep_line {Devices: }
+dv_discrep_line {  } -ldev {X1/X7/X1/X0/M0} {} -lloc {(-91.400,150.365)} {  MP(PMOS25)}
+dv_discrep_line {  } -ldev {X1/X7/X1/X1/M0} {} -lloc {(-91.400,147.770)} {  MN(NMOS25)}
+dv_discrep_line {}
+dv_discrep 41 {Incorrect Instances}
+dv_discrep_line {(_invv)                                                   ** missing injected instance **}
+dv_discrep_line {}
+dv_discrep_line {Devices: }
+dv_discrep_line {  } -ldev {X1/X11/X1/X0/M0} {} -lloc {(68.690,121.070)} {  MP(PMOS25)}
+dv_discrep_line {  } -ldev {X1/X11/X1/X1/M0} {} -lloc {(68.690,123.665)} {  MN(NMOS25)}
+dv_discrep_line {}
+dv_discrep 42 {Incorrect Instances}
+dv_discrep_line {(_invv)                                                   ** missing injected instance **}
+dv_discrep_line {}
+dv_discrep_line {Devices: }
+dv_discrep_line {  } -ldev {X1/X7/X0/X0/M0} {} -lloc {(-107.560,150.365)} {  MP(PMOS25)}
+dv_discrep_line {  } -ldev {X1/X7/X0/X1/M0} {} -lloc {(-107.560,147.770)} {  MN(NMOS25)}
+dv_discrep_line {}
+dv_discrep 43 {Incorrect Instances}
+dv_discrep_line {(_invv)                                                   ** missing injected instance **}
+dv_discrep_line {}
+dv_discrep_line {Devices: }
+dv_discrep_line {  } -ldev {X1/X11/X0/X0/M0} {} -lloc {(84.850,121.070)} {  MP(PMOS25)}
+dv_discrep_line {  } -ldev {X1/X11/X0/X1/M0} {} -lloc {(84.850,123.665)} {  MN(NMOS25)}
+dv_discrep_line {}
+dv_discrep 44 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {XKey_Generation_1/VPassThru1} {  V}
+dv_discrep_line {}
+dv_discrep 45 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {XKey_Generation_1/VPassThru2} {  V}
+dv_discrep_line {}
+dv_discrep 46 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {XKey_Generation_1/VPassThru3} {  V}
+dv_discrep_line {}
+dv_discrep 47 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {XKey_Generation_1/VPassThru4} {  V}
+dv_discrep_line {}
+dv_discrep 48 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {XKey_Generation_1/VPassThru5} {  V}
+dv_discrep_line {}
+dv_discrep 49 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {XKey_Generation_1/VPassThru6} {  V}
+dv_discrep_line {}
+dv_discrep 50 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {XKey_Generation_1/VPassThru7} {  V}
+dv_discrep_line {}
+dv_discrep 51 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {XKey_Generation_1/VPassThru8} {  V}
+dv_discrep_line {}
+dv_discrep 52 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {XKey_Generation_1/VPassThru9} {  V}
+dv_discrep_line {}
+dv_discrep 53 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {XKey_Generation_1/VPassThru10} {  V}
+dv_discrep_line {}
+dv_discrep 54 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {XKey_Generation_1/VPassThru11} {  V}
+dv_discrep_line {}
+dv_discrep 55 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {XKey_Generation_1/VPassThru12} {  V}
+dv_discrep_line {}
+dv_discrep 56 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {XKey_Generation_1/VPassThru13} {  V}
+dv_discrep_line {}
+dv_discrep 57 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {XKey_Generation_1/VPassThru14} {  V}
+dv_discrep_line {}
+dv_discrep 58 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {XKey_Generation_1/VPassThru15} {  V}
+dv_discrep_line {}
+dv_discrep 59 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {XKey_Generation_1/VPassThru16} {  V}
+dv_discrep_line {}
+dv_discrep 60 {Incorrect Instances}
+dv_discrep_line {** missing injected instance **                           (_xor2v)}
+dv_discrep_line {}
+dv_discrep_line {                                                          Devices: }
+dv_discrep_line {                                                            } -sdev {XFeistel_2/XXOR_8/MMp2} {  MP(PMOS25)}
+dv_discrep_line {                                                            } -sdev {XFeistel_2/XXOR_8/MMp1} {  MP(PMOS25)}
+dv_discrep_line {                                                            } -sdev {XFeistel_2/XXOR_8/MMp4} {  MP(PMOS25)}
+dv_discrep_line {                                                            } -sdev {XFeistel_2/XXOR_8/MMp3} {  MP(PMOS25)}
+dv_discrep_line {                                                            } -sdev {XFeistel_2/XXOR_8/MMn4} {  MN(NMOS25)}
+dv_discrep_line {                                                            } -sdev {XFeistel_2/XXOR_8/MMn1} {  MN(NMOS25)}
+dv_discrep_line {                                                            } -sdev {XFeistel_2/XXOR_8/MMn3} {  MN(NMOS25)}
+dv_discrep_line {                                                            } -sdev {XFeistel_2/XXOR_8/MMn2} {  MN(NMOS25)}
+dv_discrep_line {                                                            } -sdev {XFeistel_2/XXOR_8/XINV_1/MMp1} {  MP(PMOS25)}
+dv_discrep_line {                                                            } -sdev {XFeistel_2/XXOR_8/XINV_1/MMn1} {  MN(NMOS25)}
+dv_discrep_line {                                                            } -sdev {XFeistel_2/XXOR_8/XINV_2/MMp1} {  MP(PMOS25)}
+dv_discrep_line {                                                            } -sdev {XFeistel_2/XXOR_8/XINV_2/MMn1} {  MN(NMOS25)}
+dv_discrep_line {}
+dv_discrep 61 {Incorrect Instances}
+dv_discrep_line {** missing injected instance **                           (_xor2v)}
+dv_discrep_line {}
+dv_discrep_line {                                                          Devices: }
+dv_discrep_line {                                                            } -sdev {XFeistel_2/XXOR_3/MMp2} {  MP(PMOS25)}
+dv_discrep_line {                                                            } -sdev {XFeistel_2/XXOR_3/MMp1} {  MP(PMOS25)}
+dv_discrep_line {                                                            } -sdev {XFeistel_2/XXOR_3/MMp4} {  MP(PMOS25)}
+dv_discrep_line {                                                            } -sdev {XFeistel_2/XXOR_3/MMp3} {  MP(PMOS25)}
+dv_discrep_line {                                                            } -sdev {XFeistel_2/XXOR_3/MMn4} {  MN(NMOS25)}
+dv_discrep_line {                                                            } -sdev {XFeistel_2/XXOR_3/MMn1} {  MN(NMOS25)}
+dv_discrep_line {                                                            } -sdev {XFeistel_2/XXOR_3/MMn3} {  MN(NMOS25)}
+dv_discrep_line {                                                            } -sdev {XFeistel_2/XXOR_3/MMn2} {  MN(NMOS25)}
+dv_discrep_line {                                                            } -sdev {XFeistel_2/XXOR_3/XINV_1/MMp1} {  MP(PMOS25)}
+dv_discrep_line {                                                            } -sdev {XFeistel_2/XXOR_3/XINV_1/MMn1} {  MN(NMOS25)}
+dv_discrep_line {                                                            } -sdev {XFeistel_2/XXOR_3/XINV_2/MMp1} {  MP(PMOS25)}
+dv_discrep_line {                                                            } -sdev {XFeistel_2/XXOR_3/XINV_2/MMn1} {  MN(NMOS25)}
+dv_discrep_line {}
+dv_discrep -1 {Detailed Instance Connections}
+dv_discrep_line {}
+dv_discrep_line {(_xor2v)                                                  (_xor2v)}
+dv_discrep_line {  } -lport {in1} {: } -lnet {plain_text7} {                                          } -sport {in1} {: } -snet {plain_text7} {}
+dv_discrep_line {  } -lport {out} {: } -lnet {X0/76} {                                                } -sport {out} {: } -snet {XFeistel_1/S0_In<2>} {}
+dv_discrep_line {  } -lport {sup1} {: } -lnet {Vdd} {                                                 } -sport {sup1} {: } -snet {Vdd} {}
+dv_discrep_line {  } -lport {sup2} {: } -lnet {Gnd} {                                                 } -sport {sup2} {: } -snet {Gnd} {}
+dv_discrep_line {  } -lport {in2} {: } -lnet {key<8>} {                                               ** } -snet {key<8>} { **}
+dv_discrep_line {  ** no similar net **                                      } -sport {in2} {: } -snet {N_5} {}
+dv_discrep_line {}
+dv_discrep_line {Devices: }
+dv_discrep_line {  } -ldev {X0/X3/X2/M0} {} -lloc {(-357.440,97.905)} {  MP(PMOS25)                  } -sdev {XFeistel_1/XXOR_7/MMp2} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X3/X5/M0} {} -lloc {(-350.775,98.065)} {  MP(PMOS25)                  } -sdev {XFeistel_1/XXOR_7/MMp1} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X3/X3/M0} {} -lloc {(-356.190,97.905)} {  MP(PMOS25)                  } -sdev {XFeistel_1/XXOR_7/MMp4} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X3/X4/M0} {} -lloc {(-351.525,98.065)} {  MP(PMOS25)                  } -sdev {XFeistel_1/XXOR_7/MMp3} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X3/X6/M0} {} -lloc {(-357.190,94.950)} {  MN(NMOS25)                  } -sdev {XFeistel_1/XXOR_7/MMn4} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X0/X3/X8/M0} {} -lloc {(-351.775,94.890)} {  MN(NMOS25)                  } -sdev {XFeistel_1/XXOR_7/MMn1} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X0/X3/X7/M0} {} -lloc {(-356.440,94.950)} {  MN(NMOS25)                  } -sdev {XFeistel_1/XXOR_7/MMn3} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X0/X3/X9/M0} {} -lloc {(-350.525,94.890)} {  MN(NMOS25)                  } -sdev {XFeistel_1/XXOR_7/MMn2} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X0/X3/X0/X0/M0} {} -lloc {(-362.320,97.865)} {  MP(PMOS25)               } -sdev {XFeistel_1/XXOR_7/XINV_1/MMp1} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X3/X0/X1/M0} {} -lloc {(-362.320,95.270)} {  MN(NMOS25)               } -sdev {XFeistel_1/XXOR_7/XINV_1/MMn1} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X0/X3/X1/X0/M0} {} -lloc {(-346.160,97.865)} {  MP(PMOS25)               } -sdev {XFeistel_1/XXOR_7/XINV_2/MMp1} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X3/X1/X1/M0} {} -lloc {(-346.160,95.270)} {  MN(NMOS25)               } -sdev {XFeistel_1/XXOR_7/XINV_2/MMn1} {  MN(NMOS25) }
+dv_discrep_line {}
+dv_discrep_line {--------------------------------------------------------------------------------------------------------------}
+dv_discrep_line {}
+dv_discrep_line {(_xor2v)                                                  (_xor2v)}
+dv_discrep_line {  } -lport {in1} {: } -lnet {plain_text6} {                                          } -sport {in1} {: } -snet {plain_text6} {}
+dv_discrep_line {  } -lport {out} {: } -lnet {60} {                                                   } -sport {out} {: } -snet {XFeistel_1/S0_In<0>} {}
+dv_discrep_line {  } -lport {sup1} {: } -lnet {Vdd} {                                                 } -sport {sup1} {: } -snet {Vdd} {}
+dv_discrep_line {  } -lport {sup2} {: } -lnet {Gnd} {                                                 } -sport {sup2} {: } -snet {Gnd} {}
+dv_discrep_line {  } -lport {in2} {: } -lnet {key<0>} {                                               ** } -snet {key<0>} { **}
+dv_discrep_line {  ** no similar net **                                      } -sport {in2} {: } -snet {N_1} {}
+dv_discrep_line {}
+dv_discrep_line {Devices: }
+dv_discrep_line {  } -ldev {X0/X6/X2/M0} {} -lloc {(-351.905,159.465)} {  MP(PMOS25)                 } -sdev {XFeistel_1/XXOR_4/MMp2} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X6/X5/M0} {} -lloc {(-345.240,159.625)} {  MP(PMOS25)                 } -sdev {XFeistel_1/XXOR_4/MMp1} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X6/X3/M0} {} -lloc {(-350.655,159.465)} {  MP(PMOS25)                 } -sdev {XFeistel_1/XXOR_4/MMp4} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X6/X4/M0} {} -lloc {(-345.990,159.625)} {  MP(PMOS25)                 } -sdev {XFeistel_1/XXOR_4/MMp3} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X6/X6/M0} {} -lloc {(-351.655,156.510)} {  MN(NMOS25)                 } -sdev {XFeistel_1/XXOR_4/MMn4} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X0/X6/X8/M0} {} -lloc {(-346.240,156.450)} {  MN(NMOS25)                 } -sdev {XFeistel_1/XXOR_4/MMn1} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X0/X6/X7/M0} {} -lloc {(-350.905,156.510)} {  MN(NMOS25)                 } -sdev {XFeistel_1/XXOR_4/MMn3} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X0/X6/X9/M0} {} -lloc {(-344.990,156.450)} {  MN(NMOS25)                 } -sdev {XFeistel_1/XXOR_4/MMn2} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X0/X6/X0/X0/M0} {} -lloc {(-356.785,159.425)} {  MP(PMOS25)              } -sdev {XFeistel_1/XXOR_4/XINV_1/MMp1} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X6/X0/X1/M0} {} -lloc {(-356.785,156.830)} {  MN(NMOS25)              } -sdev {XFeistel_1/XXOR_4/XINV_1/MMn1} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X0/X6/X1/X0/M0} {} -lloc {(-340.625,159.425)} {  MP(PMOS25)              } -sdev {XFeistel_1/XXOR_4/XINV_2/MMp1} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X6/X1/X1/M0} {} -lloc {(-340.625,156.830)} {  MN(NMOS25)              } -sdev {XFeistel_1/XXOR_4/XINV_2/MMn1} {  MN(NMOS25) }
+dv_discrep_line {}
+dv_discrep_line {--------------------------------------------------------------------------------------------------------------}
+dv_discrep_line {}
+dv_discrep_line {(_xor2v)                                                  (_xor2v)}
+dv_discrep_line {  } -lport {in2} {: } -lnet {cipher_text7} {                                         } -sport {in1} {: } -snet {cipher_text7} {}
+dv_discrep_line {  } -lport {out} {: } -lnet {X1/76} {                                                } -sport {out} {: } -snet {XFeistel_2/S0_In<2>} {}
+dv_discrep_line {  } -lport {sup1} {: } -lnet {Vdd} {                                                 } -sport {sup1} {: } -snet {Vdd} {}
+dv_discrep_line {  } -lport {sup2} {: } -lnet {Gnd} {                                                 } -sport {sup2} {: } -snet {Gnd} {}
+dv_discrep_line {  } -lport {in1} {: } -lnet {key<5>} {                                               ** } -snet {key<5>} { **}
+dv_discrep_line {  ** no similar net **                                      } -sport {in2} {: } -snet {N_6} {}
+dv_discrep_line {}
+dv_discrep_line {Devices: }
+dv_discrep_line {  } -ldev {X1/X3/X2/M0} {} -lloc {(-108.265,97.905)} {  MP(PMOS25)                  } -sdev {XFeistel_2/XXOR_7/MMp2} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X1/X3/X5/M0} {} -lloc {(-101.600,98.065)} {  MP(PMOS25)                  } -sdev {XFeistel_2/XXOR_7/MMp1} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X1/X3/X3/M0} {} -lloc {(-107.015,97.905)} {  MP(PMOS25)                  } -sdev {XFeistel_2/XXOR_7/MMp4} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X1/X3/X4/M0} {} -lloc {(-102.350,98.065)} {  MP(PMOS25)                  } -sdev {XFeistel_2/XXOR_7/MMp3} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X1/X3/X6/M0} {} -lloc {(-108.015,94.950)} {  MN(NMOS25)                  } -sdev {XFeistel_2/XXOR_7/MMn4} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X1/X3/X8/M0} {} -lloc {(-102.600,94.890)} {  MN(NMOS25)                  } -sdev {XFeistel_2/XXOR_7/MMn1} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X1/X3/X7/M0} {} -lloc {(-107.265,94.950)} {  MN(NMOS25)                  } -sdev {XFeistel_2/XXOR_7/MMn3} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X1/X3/X9/M0} {} -lloc {(-101.350,94.890)} {  MN(NMOS25)                  } -sdev {XFeistel_2/XXOR_7/MMn2} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X1/X3/X0/X0/M0} {} -lloc {(-113.145,97.865)} {  MP(PMOS25)               } -sdev {XFeistel_2/XXOR_7/XINV_1/MMp1} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X1/X3/X0/X1/M0} {} -lloc {(-113.145,95.270)} {  MN(NMOS25)               } -sdev {XFeistel_2/XXOR_7/XINV_1/MMn1} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X1/X3/X1/X0/M0} {} -lloc {(-96.985,97.865)} {  MP(PMOS25)                } -sdev {XFeistel_2/XXOR_7/XINV_2/MMp1} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X1/X3/X1/X1/M0} {} -lloc {(-96.985,95.270)} {  MN(NMOS25)                } -sdev {XFeistel_2/XXOR_7/XINV_2/MMn1} {  MN(NMOS25) }
+dv_discrep_line {}
+dv_discrep_line {--------------------------------------------------------------------------------------------------------------}
+dv_discrep_line {}
+dv_discrep_line {(_xor2v)                                                  (_xor2v)}
+dv_discrep_line {  } -lport {in1} {: } -lnet {plain_text4} {                                          } -sport {in1} {: } -snet {plain_text4} {}
+dv_discrep_line {  } -lport {out} {: } -lnet {X0/75} {                                                } -sport {out} {: } -snet {XFeistel_1/S0_In<3>} {}
+dv_discrep_line {  } -lport {sup1} {: } -lnet {Vdd} {                                                 } -sport {sup1} {: } -snet {Vdd} {}
+dv_discrep_line {  } -lport {sup2} {: } -lnet {Gnd} {                                                 } -sport {sup2} {: } -snet {Gnd} {}
+dv_discrep_line {  } -lport {in2} {: } -lnet {key<3>} {                                               ** } -snet {key<3>} { **}
+dv_discrep_line {  ** no similar net **                                      } -sport {in2} {: } -snet {N_7} {}
+dv_discrep_line {}
+dv_discrep_line {Devices: }
+dv_discrep_line {  } -ldev {X0/X2/X2/M0} {} -lloc {(-357.780,83.960)} {  MP(PMOS25)                  } -sdev {XFeistel_1/XXOR_10/MMp2} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X2/X5/M0} {} -lloc {(-351.115,84.120)} {  MP(PMOS25)                  } -sdev {XFeistel_1/XXOR_10/MMp1} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X2/X3/M0} {} -lloc {(-356.530,83.960)} {  MP(PMOS25)                  } -sdev {XFeistel_1/XXOR_10/MMp4} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X2/X4/M0} {} -lloc {(-351.865,84.120)} {  MP(PMOS25)                  } -sdev {XFeistel_1/XXOR_10/MMp3} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X2/X6/M0} {} -lloc {(-357.530,81.005)} {  MN(NMOS25)                  } -sdev {XFeistel_1/XXOR_10/MMn4} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X0/X2/X8/M0} {} -lloc {(-352.115,80.945)} {  MN(NMOS25)                  } -sdev {XFeistel_1/XXOR_10/MMn1} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X0/X2/X7/M0} {} -lloc {(-356.780,81.005)} {  MN(NMOS25)                  } -sdev {XFeistel_1/XXOR_10/MMn3} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X0/X2/X9/M0} {} -lloc {(-350.865,80.945)} {  MN(NMOS25)                  } -sdev {XFeistel_1/XXOR_10/MMn2} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X0/X2/X0/X0/M0} {} -lloc {(-362.660,83.920)} {  MP(PMOS25)               } -sdev {XFeistel_1/XXOR_10/XINV_1/MMp1} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X2/X0/X1/M0} {} -lloc {(-362.660,81.325)} {  MN(NMOS25)               } -sdev {XFeistel_1/XXOR_10/XINV_1/MMn1} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X0/X2/X1/X0/M0} {} -lloc {(-346.500,83.920)} {  MP(PMOS25)               } -sdev {XFeistel_1/XXOR_10/XINV_2/MMp1} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X2/X1/X1/M0} {} -lloc {(-346.500,81.325)} {  MN(NMOS25)               } -sdev {XFeistel_1/XXOR_10/XINV_2/MMn1} {  MN(NMOS25) }
+dv_discrep_line {}
+dv_discrep_line {--------------------------------------------------------------------------------------------------------------}
+dv_discrep_line {}
+dv_discrep_line {(_xor2v)                                                  (_xor2v)}
+dv_discrep_line {  } -lport {in2} {: } -lnet {cipher_text4} {                                         } -sport {in1} {: } -snet {cipher_text4} {}
+dv_discrep_line {  } -lport {out} {: } -lnet {X1/75} {                                                } -sport {out} {: } -snet {XFeistel_2/S0_In<3>} {}
+dv_discrep_line {  } -lport {sup1} {: } -lnet {Vdd} {                                                 } -sport {sup1} {: } -snet {Vdd} {}
+dv_discrep_line {  } -lport {sup2} {: } -lnet {Gnd} {                                                 } -sport {sup2} {: } -snet {Gnd} {}
+dv_discrep_line {  } -lport {in1} {: } -lnet {key<4>} {                                               ** } -snet {key<4>} { **}
+dv_discrep_line {  ** no similar net **                                      } -sport {in2} {: } -snet {N_8} {}
+dv_discrep_line {}
+dv_discrep_line {Devices: }
+dv_discrep_line {  } -ldev {X1/X2/X2/M0} {} -lloc {(-108.605,83.960)} {  MP(PMOS25)                  } -sdev {XFeistel_2/XXOR_10/MMp2} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X1/X2/X5/M0} {} -lloc {(-101.940,84.120)} {  MP(PMOS25)                  } -sdev {XFeistel_2/XXOR_10/MMp1} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X1/X2/X3/M0} {} -lloc {(-107.355,83.960)} {  MP(PMOS25)                  } -sdev {XFeistel_2/XXOR_10/MMp4} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X1/X2/X4/M0} {} -lloc {(-102.690,84.120)} {  MP(PMOS25)                  } -sdev {XFeistel_2/XXOR_10/MMp3} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X1/X2/X6/M0} {} -lloc {(-108.355,81.005)} {  MN(NMOS25)                  } -sdev {XFeistel_2/XXOR_10/MMn4} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X1/X2/X8/M0} {} -lloc {(-102.940,80.945)} {  MN(NMOS25)                  } -sdev {XFeistel_2/XXOR_10/MMn1} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X1/X2/X7/M0} {} -lloc {(-107.605,81.005)} {  MN(NMOS25)                  } -sdev {XFeistel_2/XXOR_10/MMn3} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X1/X2/X9/M0} {} -lloc {(-101.690,80.945)} {  MN(NMOS25)                  } -sdev {XFeistel_2/XXOR_10/MMn2} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X1/X2/X0/X0/M0} {} -lloc {(-113.485,83.920)} {  MP(PMOS25)               } -sdev {XFeistel_2/XXOR_10/XINV_1/MMp1} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X1/X2/X0/X1/M0} {} -lloc {(-113.485,81.325)} {  MN(NMOS25)               } -sdev {XFeistel_2/XXOR_10/XINV_1/MMn1} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X1/X2/X1/X0/M0} {} -lloc {(-97.325,83.920)} {  MP(PMOS25)                } -sdev {XFeistel_2/XXOR_10/XINV_2/MMp1} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X1/X2/X1/X1/M0} {} -lloc {(-97.325,81.325)} {  MN(NMOS25)                } -sdev {XFeistel_2/XXOR_10/XINV_2/MMn1} {  MN(NMOS25) }
+dv_discrep_line {}
+dv_discrep_line {--------------------------------------------------------------------------------------------------------------}
+dv_discrep_line {}
+dv_discrep_line {(_xor2v)                                                  (_xor2v)}
+dv_discrep_line {  } -lport {in1} {: } -lnet {plain_text6} {                                          } -sport {in1} {: } -snet {plain_text6} {}
+dv_discrep_line {  } -lport {out} {: } -lnet {X0/74} {                                                } -sport {out} {: } -snet {XFeistel_1/S1_In<2>} {}
+dv_discrep_line {  } -lport {sup1} {: } -lnet {Vdd} {                                                 } -sport {sup1} {: } -snet {Vdd} {}
+dv_discrep_line {  } -lport {sup2} {: } -lnet {Gnd} {                                                 } -sport {sup2} {: } -snet {Gnd} {}
+dv_discrep_line {  } -lport {in2} {: } -lnet {key<9>} {                                               ** } -snet {key<9>} { **}
+dv_discrep_line {  ** no similar net **                                      } -sport {in2} {: } -snet {N_13} {}
+dv_discrep_line {}
+dv_discrep_line {Devices: }
+dv_discrep_line {  } -ldev {X0/X1/X2/M0} {} -lloc {(-358.005,293.710)} {  MP(PMOS25)                 } -sdev {XFeistel_1/XXOR_2/MMp2} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X1/X5/M0} {} -lloc {(-351.340,293.870)} {  MP(PMOS25)                 } -sdev {XFeistel_1/XXOR_2/MMp1} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X1/X3/M0} {} -lloc {(-356.755,293.710)} {  MP(PMOS25)                 } -sdev {XFeistel_1/XXOR_2/MMp4} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X1/X4/M0} {} -lloc {(-352.090,293.870)} {  MP(PMOS25)                 } -sdev {XFeistel_1/XXOR_2/MMp3} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X1/X6/M0} {} -lloc {(-357.755,290.755)} {  MN(NMOS25)                 } -sdev {XFeistel_1/XXOR_2/MMn4} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X0/X1/X8/M0} {} -lloc {(-352.340,290.695)} {  MN(NMOS25)                 } -sdev {XFeistel_1/XXOR_2/MMn1} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X0/X1/X7/M0} {} -lloc {(-357.005,290.755)} {  MN(NMOS25)                 } -sdev {XFeistel_1/XXOR_2/MMn3} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X0/X1/X9/M0} {} -lloc {(-351.090,290.695)} {  MN(NMOS25)                 } -sdev {XFeistel_1/XXOR_2/MMn2} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X0/X1/X0/X0/M0} {} -lloc {(-362.885,293.670)} {  MP(PMOS25)              } -sdev {XFeistel_1/XXOR_2/XINV_1/MMp1} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X1/X0/X1/M0} {} -lloc {(-362.885,291.075)} {  MN(NMOS25)              } -sdev {XFeistel_1/XXOR_2/XINV_1/MMn1} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X0/X1/X1/X0/M0} {} -lloc {(-346.725,293.670)} {  MP(PMOS25)              } -sdev {XFeistel_1/XXOR_2/XINV_2/MMp1} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X1/X1/X1/M0} {} -lloc {(-346.725,291.075)} {  MN(NMOS25)              } -sdev {XFeistel_1/XXOR_2/XINV_2/MMn1} {  MN(NMOS25) }
+dv_discrep_line {}
+dv_discrep_line {--------------------------------------------------------------------------------------------------------------}
+dv_discrep_line {}
+dv_discrep_line {(_xor2v)                                                  (_xor2v)}
+dv_discrep_line {  } -lport {in1} {: } -lnet {plain_text4} {                                          } -sport {in1} {: } -snet {plain_text4} {}
+dv_discrep_line {  } -lport {out} {: } -lnet {10} {                                                   } -sport {out} {: } -snet {XFeistel_1/S1_In<1>} {}
+dv_discrep_line {  } -lport {sup1} {: } -lnet {Vdd} {                                                 } -sport {sup1} {: } -snet {Vdd} {}
+dv_discrep_line {  } -lport {sup2} {: } -lnet {Gnd} {                                                 } -sport {sup2} {: } -snet {Gnd} {}
+dv_discrep_line {  } -lport {in2} {: } -lnet {key<2>} {                                               ** } -snet {key<2>} { **}
+dv_discrep_line {  ** no similar net **                                      } -sport {in2} {: } -snet {N_11} {}
+dv_discrep_line {}
+dv_discrep_line {Devices: }
+dv_discrep_line {  } -ldev {X0/X4/X2/M0} {} -lloc {(-352.705,345.000)} {  MP(PMOS25)                 } -sdev {XFeistel_1/XXOR_5/MMp2} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X4/X5/M0} {} -lloc {(-346.040,345.160)} {  MP(PMOS25)                 } -sdev {XFeistel_1/XXOR_5/MMp1} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X4/X3/M0} {} -lloc {(-351.455,345.000)} {  MP(PMOS25)                 } -sdev {XFeistel_1/XXOR_5/MMp4} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X4/X4/M0} {} -lloc {(-346.790,345.160)} {  MP(PMOS25)                 } -sdev {XFeistel_1/XXOR_5/MMp3} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X4/X6/M0} {} -lloc {(-352.455,342.045)} {  MN(NMOS25)                 } -sdev {XFeistel_1/XXOR_5/MMn4} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X0/X4/X8/M0} {} -lloc {(-347.040,341.985)} {  MN(NMOS25)                 } -sdev {XFeistel_1/XXOR_5/MMn1} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X0/X4/X7/M0} {} -lloc {(-351.705,342.045)} {  MN(NMOS25)                 } -sdev {XFeistel_1/XXOR_5/MMn3} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X0/X4/X9/M0} {} -lloc {(-345.790,341.985)} {  MN(NMOS25)                 } -sdev {XFeistel_1/XXOR_5/MMn2} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X0/X4/X0/X0/M0} {} -lloc {(-357.585,344.960)} {  MP(PMOS25)              } -sdev {XFeistel_1/XXOR_5/XINV_1/MMp1} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X4/X0/X1/M0} {} -lloc {(-357.585,342.365)} {  MN(NMOS25)              } -sdev {XFeistel_1/XXOR_5/XINV_1/MMn1} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X0/X4/X1/X0/M0} {} -lloc {(-341.425,344.960)} {  MP(PMOS25)              } -sdev {XFeistel_1/XXOR_5/XINV_2/MMp1} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X4/X1/X1/M0} {} -lloc {(-341.425,342.365)} {  MN(NMOS25)              } -sdev {XFeistel_1/XXOR_5/XINV_2/MMn1} {  MN(NMOS25) }
+dv_discrep_line {}
+dv_discrep_line {--------------------------------------------------------------------------------------------------------------}
+dv_discrep_line {}
+dv_discrep_line {(_xor2v)                                                  (_xor2v)}
+dv_discrep_line {  } -lport {in1} {: } -lnet {plain_text3} {                                          } -sport {in1} {: } -snet {plain_text3} {}
+dv_discrep_line {  } -lport {out} {: } -lnet {9} {                                                    } -sport {out} {: } -snet {XFeistel_1/S0_In<1>} {}
+dv_discrep_line {  } -lport {sup1} {: } -lnet {Vdd} {                                                 } -sport {sup1} {: } -snet {Vdd} {}
+dv_discrep_line {  } -lport {sup2} {: } -lnet {Gnd} {                                                 } -sport {sup2} {: } -snet {Gnd} {}
+dv_discrep_line {  } -lport {in2} {: } -lnet {key<6>} {                                               ** } -snet {key<6>} { **}
+dv_discrep_line {  ** no similar net **                                      } -sport {in2} {: } -snet {N_3} {}
+dv_discrep_line {}
+dv_discrep_line {Devices: }
+dv_discrep_line {  } -ldev {X0/X7/X2/M0} {} -lloc {(-351.855,150.405)} {  MP(PMOS25)                 } -sdev {XFeistel_1/XXOR_3/MMp2} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X7/X5/M0} {} -lloc {(-345.190,150.565)} {  MP(PMOS25)                 } -sdev {XFeistel_1/XXOR_3/MMp1} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X7/X3/M0} {} -lloc {(-350.605,150.405)} {  MP(PMOS25)                 } -sdev {XFeistel_1/XXOR_3/MMp4} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X7/X4/M0} {} -lloc {(-345.940,150.565)} {  MP(PMOS25)                 } -sdev {XFeistel_1/XXOR_3/MMp3} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X7/X6/M0} {} -lloc {(-351.605,147.450)} {  MN(NMOS25)                 } -sdev {XFeistel_1/XXOR_3/MMn4} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X0/X7/X8/M0} {} -lloc {(-346.190,147.390)} {  MN(NMOS25)                 } -sdev {XFeistel_1/XXOR_3/MMn1} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X0/X7/X7/M0} {} -lloc {(-350.855,147.450)} {  MN(NMOS25)                 } -sdev {XFeistel_1/XXOR_3/MMn3} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X0/X7/X9/M0} {} -lloc {(-344.940,147.390)} {  MN(NMOS25)                 } -sdev {XFeistel_1/XXOR_3/MMn2} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X0/X7/X0/X0/M0} {} -lloc {(-356.735,150.365)} {  MP(PMOS25)              } -sdev {XFeistel_1/XXOR_3/XINV_1/MMp1} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X7/X0/X1/M0} {} -lloc {(-356.735,147.770)} {  MN(NMOS25)              } -sdev {XFeistel_1/XXOR_3/XINV_1/MMn1} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X0/X7/X1/X0/M0} {} -lloc {(-340.575,150.365)} {  MP(PMOS25)              } -sdev {XFeistel_1/XXOR_3/XINV_2/MMp1} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X7/X1/X1/M0} {} -lloc {(-340.575,147.770)} {  MN(NMOS25)              } -sdev {XFeistel_1/XXOR_3/XINV_2/MMn1} {  MN(NMOS25) }
+dv_discrep_line {}
+dv_discrep_line {--------------------------------------------------------------------------------------------------------------}
+dv_discrep_line {}
+dv_discrep_line {(_xor2v)                                                  (_xor2v)}
+dv_discrep_line {  } -lport {in2} {: } -lnet {cipher_text4} {                                         } -sport {in1} {: } -snet {cipher_text4} {}
+dv_discrep_line {  } -lport {out} {: } -lnet {26} {                                                   } -sport {out} {: } -snet {XFeistel_2/S1_In<1>} {}
+dv_discrep_line {  } -lport {sup1} {: } -lnet {Vdd} {                                                 } -sport {sup1} {: } -snet {Vdd} {}
+dv_discrep_line {  } -lport {sup2} {: } -lnet {Gnd} {                                                 } -sport {sup2} {: } -snet {Gnd} {}
+dv_discrep_line {  } -lport {in1} {: } -lnet {key<1>} {                                               ** } -snet {key<1>} { **}
+dv_discrep_line {  ** no similar net **                                      } -sport {in2} {: } -snet {N_12} {}
+dv_discrep_line {}
+dv_discrep_line {Devices: }
+dv_discrep_line {  } -ldev {X1/X4/X2/M0} {} -lloc {(-103.530,345.000)} {  MP(PMOS25)                 } -sdev {XFeistel_2/XXOR_5/MMp2} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X1/X4/X5/M0} {} -lloc {(-96.865,345.160)} {  MP(PMOS25)                  } -sdev {XFeistel_2/XXOR_5/MMp1} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X1/X4/X3/M0} {} -lloc {(-102.280,345.000)} {  MP(PMOS25)                 } -sdev {XFeistel_2/XXOR_5/MMp4} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X1/X4/X4/M0} {} -lloc {(-97.615,345.160)} {  MP(PMOS25)                  } -sdev {XFeistel_2/XXOR_5/MMp3} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X1/X4/X6/M0} {} -lloc {(-103.280,342.045)} {  MN(NMOS25)                 } -sdev {XFeistel_2/XXOR_5/MMn4} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X1/X4/X8/M0} {} -lloc {(-97.865,341.985)} {  MN(NMOS25)                  } -sdev {XFeistel_2/XXOR_5/MMn1} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X1/X4/X7/M0} {} -lloc {(-102.530,342.045)} {  MN(NMOS25)                 } -sdev {XFeistel_2/XXOR_5/MMn3} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X1/X4/X9/M0} {} -lloc {(-96.615,341.985)} {  MN(NMOS25)                  } -sdev {XFeistel_2/XXOR_5/MMn2} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X1/X4/X0/X0/M0} {} -lloc {(-108.410,344.960)} {  MP(PMOS25)              } -sdev {XFeistel_2/XXOR_5/XINV_1/MMp1} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X1/X4/X0/X1/M0} {} -lloc {(-108.410,342.365)} {  MN(NMOS25)              } -sdev {XFeistel_2/XXOR_5/XINV_1/MMn1} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X1/X4/X1/X0/M0} {} -lloc {(-92.250,344.960)} {  MP(PMOS25)               } -sdev {XFeistel_2/XXOR_5/XINV_2/MMp1} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X1/X4/X1/X1/M0} {} -lloc {(-92.250,342.365)} {  MN(NMOS25)               } -sdev {XFeistel_2/XXOR_5/XINV_2/MMn1} {  MN(NMOS25) }
+dv_discrep_line {}
+dv_discrep_line {--------------------------------------------------------------------------------------------------------------}
+dv_discrep_line {}
+dv_discrep_line {(_xor2v)                                                  (_xor2v)}
+dv_discrep_line {  } -lport {in2} {: } -lnet {cipher_text6} {                                         } -sport {in1} {: } -snet {cipher_text6} {}
+dv_discrep_line {  } -lport {out} {: } -lnet {X1/74} {                                                } -sport {out} {: } -snet {XFeistel_2/S1_In<2>} {}
+dv_discrep_line {  } -lport {sup1} {: } -lnet {Vdd} {                                                 } -sport {sup1} {: } -snet {Vdd} {}
+dv_discrep_line {  } -lport {sup2} {: } -lnet {Gnd} {                                                 } -sport {sup2} {: } -snet {Gnd} {}
+dv_discrep_line {  } -lport {in1} {: } -lnet {key<0>} {                                               ** } -snet {key<0>} { **}
+dv_discrep_line {  ** no similar net **                                      } -sport {in2} {: } -snet {N_14} {}
+dv_discrep_line {}
+dv_discrep_line {Devices: }
+dv_discrep_line {  } -ldev {X1/X1/X2/M0} {} -lloc {(-108.830,293.710)} {  MP(PMOS25)                 } -sdev {XFeistel_2/XXOR_2/MMp2} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X1/X1/X5/M0} {} -lloc {(-102.165,293.870)} {  MP(PMOS25)                 } -sdev {XFeistel_2/XXOR_2/MMp1} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X1/X1/X3/M0} {} -lloc {(-107.580,293.710)} {  MP(PMOS25)                 } -sdev {XFeistel_2/XXOR_2/MMp4} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X1/X1/X4/M0} {} -lloc {(-102.915,293.870)} {  MP(PMOS25)                 } -sdev {XFeistel_2/XXOR_2/MMp3} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X1/X1/X6/M0} {} -lloc {(-108.580,290.755)} {  MN(NMOS25)                 } -sdev {XFeistel_2/XXOR_2/MMn4} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X1/X1/X8/M0} {} -lloc {(-103.165,290.695)} {  MN(NMOS25)                 } -sdev {XFeistel_2/XXOR_2/MMn1} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X1/X1/X7/M0} {} -lloc {(-107.830,290.755)} {  MN(NMOS25)                 } -sdev {XFeistel_2/XXOR_2/MMn3} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X1/X1/X9/M0} {} -lloc {(-101.915,290.695)} {  MN(NMOS25)                 } -sdev {XFeistel_2/XXOR_2/MMn2} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X1/X1/X0/X0/M0} {} -lloc {(-113.710,293.670)} {  MP(PMOS25)              } -sdev {XFeistel_2/XXOR_2/XINV_1/MMp1} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X1/X1/X0/X1/M0} {} -lloc {(-113.710,291.075)} {  MN(NMOS25)              } -sdev {XFeistel_2/XXOR_2/XINV_1/MMn1} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X1/X1/X1/X0/M0} {} -lloc {(-97.550,293.670)} {  MP(PMOS25)               } -sdev {XFeistel_2/XXOR_2/XINV_2/MMp1} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X1/X1/X1/X1/M0} {} -lloc {(-97.550,291.075)} {  MN(NMOS25)               } -sdev {XFeistel_2/XXOR_2/XINV_2/MMn1} {  MN(NMOS25) }
+dv_discrep_line {}
+dv_discrep_line {--------------------------------------------------------------------------------------------------------------}
+dv_discrep_line {}
+dv_discrep_line {(_xor2v)                                                  (_xor2v)}
+dv_discrep_line {  } -lport {in1} {: } -lnet {plain_text7} {                                          } -sport {in1} {: } -snet {plain_text7} {}
+dv_discrep_line {  } -lport {out} {: } -lnet {61} {                                                   } -sport {out} {: } -snet {XFeistel_1/S1_In<0>} {}
+dv_discrep_line {  } -lport {sup1} {: } -lnet {Vdd} {                                                 } -sport {sup1} {: } -snet {Vdd} {}
+dv_discrep_line {  } -lport {sup2} {: } -lnet {Gnd} {                                                 } -sport {sup2} {: } -snet {Gnd} {}
+dv_discrep_line {  } -lport {in2} {: } -lnet {key<7>} {                                               ** } -snet {key<7>} { **}
+dv_discrep_line {  ** no similar net **                                      } -sport {in2} {: } -snet {N_9} {}
+dv_discrep_line {}
+dv_discrep_line {Devices: }
+dv_discrep_line {  } -ldev {X0/X5/X2/M0} {} -lloc {(-352.530,355.460)} {  MP(PMOS25)                 } -sdev {XFeistel_1/XXOR_6/MMp2} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X5/X5/M0} {} -lloc {(-345.865,355.620)} {  MP(PMOS25)                 } -sdev {XFeistel_1/XXOR_6/MMp1} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X5/X3/M0} {} -lloc {(-351.280,355.460)} {  MP(PMOS25)                 } -sdev {XFeistel_1/XXOR_6/MMp4} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X5/X4/M0} {} -lloc {(-346.615,355.620)} {  MP(PMOS25)                 } -sdev {XFeistel_1/XXOR_6/MMp3} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X5/X6/M0} {} -lloc {(-352.280,352.505)} {  MN(NMOS25)                 } -sdev {XFeistel_1/XXOR_6/MMn4} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X0/X5/X8/M0} {} -lloc {(-346.865,352.445)} {  MN(NMOS25)                 } -sdev {XFeistel_1/XXOR_6/MMn1} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X0/X5/X7/M0} {} -lloc {(-351.530,352.505)} {  MN(NMOS25)                 } -sdev {XFeistel_1/XXOR_6/MMn3} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X0/X5/X9/M0} {} -lloc {(-345.615,352.445)} {  MN(NMOS25)                 } -sdev {XFeistel_1/XXOR_6/MMn2} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X0/X5/X0/X0/M0} {} -lloc {(-357.410,355.420)} {  MP(PMOS25)              } -sdev {XFeistel_1/XXOR_6/XINV_1/MMp1} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X5/X0/X1/M0} {} -lloc {(-357.410,352.825)} {  MN(NMOS25)              } -sdev {XFeistel_1/XXOR_6/XINV_1/MMn1} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X0/X5/X1/X0/M0} {} -lloc {(-341.250,355.420)} {  MP(PMOS25)              } -sdev {XFeistel_1/XXOR_6/XINV_2/MMp1} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X5/X1/X1/M0} {} -lloc {(-341.250,352.825)} {  MN(NMOS25)              } -sdev {XFeistel_1/XXOR_6/XINV_2/MMn1} {  MN(NMOS25) }
+dv_discrep_line {}
+dv_discrep_line {--------------------------------------------------------------------------------------------------------------}
+dv_discrep_line {}
+dv_discrep_line {(_xor2v)                                                  (_xor2v)}
+dv_discrep_line {  } -lport {in1} {: } -lnet {plain_text3} {                                          } -sport {in1} {: } -snet {plain_text3} {}
+dv_discrep_line {  } -lport {out} {: } -lnet {X0/73} {                                                } -sport {out} {: } -snet {XFeistel_1/S1_In<3>} {}
+dv_discrep_line {  } -lport {sup1} {: } -lnet {Vdd} {                                                 } -sport {sup1} {: } -snet {Vdd} {}
+dv_discrep_line {  } -lport {sup2} {: } -lnet {Gnd} {                                                 } -sport {sup2} {: } -snet {Gnd} {}
+dv_discrep_line {  } -lport {in2} {: } -lnet {key<5>} {                                               ** } -snet {key<5>} { **}
+dv_discrep_line {  ** no similar net **                                      } -sport {in2} {: } -snet {N_15} {}
+dv_discrep_line {}
+dv_discrep_line {Devices: }
+dv_discrep_line {  } -ldev {X0/X0/X2/M0} {} -lloc {(-358.060,279.305)} {  MP(PMOS25)                 } -sdev {XFeistel_1/XXOR_1/MMp2} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X0/X5/M0} {} -lloc {(-351.395,279.465)} {  MP(PMOS25)                 } -sdev {XFeistel_1/XXOR_1/MMp1} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X0/X3/M0} {} -lloc {(-356.810,279.305)} {  MP(PMOS25)                 } -sdev {XFeistel_1/XXOR_1/MMp4} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X0/X4/M0} {} -lloc {(-352.145,279.465)} {  MP(PMOS25)                 } -sdev {XFeistel_1/XXOR_1/MMp3} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X0/X6/M0} {} -lloc {(-357.810,276.350)} {  MN(NMOS25)                 } -sdev {XFeistel_1/XXOR_1/MMn4} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X0/X0/X8/M0} {} -lloc {(-352.395,276.290)} {  MN(NMOS25)                 } -sdev {XFeistel_1/XXOR_1/MMn1} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X0/X0/X7/M0} {} -lloc {(-357.060,276.350)} {  MN(NMOS25)                 } -sdev {XFeistel_1/XXOR_1/MMn3} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X0/X0/X9/M0} {} -lloc {(-351.145,276.290)} {  MN(NMOS25)                 } -sdev {XFeistel_1/XXOR_1/MMn2} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X0/X0/X0/X0/M0} {} -lloc {(-362.940,279.265)} {  MP(PMOS25)              } -sdev {XFeistel_1/XXOR_1/XINV_1/MMp1} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X0/X0/X1/M0} {} -lloc {(-362.940,276.670)} {  MN(NMOS25)              } -sdev {XFeistel_1/XXOR_1/XINV_1/MMn1} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X0/X0/X1/X0/M0} {} -lloc {(-346.780,279.265)} {  MP(PMOS25)              } -sdev {XFeistel_1/XXOR_1/XINV_2/MMp1} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X0/X1/X1/M0} {} -lloc {(-346.780,276.670)} {  MN(NMOS25)              } -sdev {XFeistel_1/XXOR_1/XINV_2/MMn1} {  MN(NMOS25) }
+dv_discrep_line {}
+dv_discrep_line {--------------------------------------------------------------------------------------------------------------}
+dv_discrep_line {}
+dv_discrep_line {(_xor2v)                                                  (_xor2v)}
+dv_discrep_line {  } -lport {in1} {: } -lnet {X0/64} {                                                } -sport {in2} {: } -snet {XFeistel_1/S0_Out<1>} {}
+dv_discrep_line {  } -lport {in2} {: } -lnet {plain_text1} {                                          } -sport {in1} {: } -snet {plain_text1} {}
+dv_discrep_line {  } -lport {sup1} {: } -lnet {Vdd} {                                                 } -sport {sup1} {: } -snet {Vdd} {}
+dv_discrep_line {  } -lport {sup2} {: } -lnet {Gnd} {                                                 } -sport {sup2} {: } -snet {Gnd} {}
+dv_discrep_line {  } -lport {out} {: } -lnet {cipher_text4} {                                         ** } -snet {cipher_text4} { **}
+dv_discrep_line {  ** } -lnet {cipher_text3} { **                                        } -sport {out} {: } -snet {cipher_text3} {}
+dv_discrep_line {}
+dv_discrep_line {Devices: }
+dv_discrep_line {  } -ldev {X0/X10/X2/M0} {} -lloc {(-169.845,68.975)} {  MP(PMOS25)                 } -sdev {XFeistel_1/XXOR_12/MMp2} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X10/X5/M0} {} -lloc {(-176.510,69.135)} {  MP(PMOS25)                 } -sdev {XFeistel_1/XXOR_12/MMp1} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X10/X3/M0} {} -lloc {(-171.095,68.975)} {  MP(PMOS25)                 } -sdev {XFeistel_1/XXOR_12/MMp4} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X10/X4/M0} {} -lloc {(-175.760,69.135)} {  MP(PMOS25)                 } -sdev {XFeistel_1/XXOR_12/MMp3} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X10/X6/M0} {} -lloc {(-170.095,66.020)} {  MN(NMOS25)                 } -sdev {XFeistel_1/XXOR_12/MMn4} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X0/X10/X8/M0} {} -lloc {(-175.510,65.960)} {  MN(NMOS25)                 } -sdev {XFeistel_1/XXOR_12/MMn1} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X0/X10/X7/M0} {} -lloc {(-170.845,66.020)} {  MN(NMOS25)                 } -sdev {XFeistel_1/XXOR_12/MMn3} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X0/X10/X9/M0} {} -lloc {(-176.760,65.960)} {  MN(NMOS25)                 } -sdev {XFeistel_1/XXOR_12/MMn2} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X0/X10/X0/X0/M0} {} -lloc {(-164.965,68.935)} {  MP(PMOS25)              } -sdev {XFeistel_1/XXOR_12/XINV_1/MMp1} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X10/X0/X1/M0} {} -lloc {(-164.965,66.340)} {  MN(NMOS25)              } -sdev {XFeistel_1/XXOR_12/XINV_1/MMn1} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X0/X10/X1/X0/M0} {} -lloc {(-181.125,68.935)} {  MP(PMOS25)              } -sdev {XFeistel_1/XXOR_12/XINV_2/MMp1} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X10/X1/X1/M0} {} -lloc {(-181.125,66.340)} {  MN(NMOS25)              } -sdev {XFeistel_1/XXOR_12/XINV_2/MMn1} {  MN(NMOS25) }
+dv_discrep_line {}
+dv_discrep_line {--------------------------------------------------------------------------------------------------------------}
+dv_discrep_line {}
+dv_discrep_line {(_xor2v)                                                  (_xor2v)}
+dv_discrep_line {  } -lport {in1} {: } -lnet {plain_text2} {                                          } -sport {in1} {: } -snet {plain_text2} {}
+dv_discrep_line {  } -lport {in2} {: } -lnet {X0/62} {                                                } -sport {in2} {: } -snet {XFeistel_1/S1_Out<0>} {}
+dv_discrep_line {  } -lport {sup1} {: } -lnet {Vdd} {                                                 } -sport {sup1} {: } -snet {Vdd} {}
+dv_discrep_line {  } -lport {sup2} {: } -lnet {Gnd} {                                                 } -sport {sup2} {: } -snet {Gnd} {}
+dv_discrep_line {  } -lport {out} {: } -lnet {cipher_text3} {                                         ** } -snet {cipher_text3} { **}
+dv_discrep_line {  ** } -lnet {cipher_text4} { **                                        } -sport {out} {: } -snet {cipher_text4} {}
+dv_discrep_line {}
+dv_discrep_line {Devices: }
+dv_discrep_line {  } -ldev {X0/X8/X2/M0} {} -lloc {(-171.840,316.215)} {  MP(PMOS25)                 } -sdev {XFeistel_1/XXOR_9/MMp2} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X8/X5/M0} {} -lloc {(-178.505,316.055)} {  MP(PMOS25)                 } -sdev {XFeistel_1/XXOR_9/MMp1} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X8/X3/M0} {} -lloc {(-173.090,316.215)} {  MP(PMOS25)                 } -sdev {XFeistel_1/XXOR_9/MMp4} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X8/X4/M0} {} -lloc {(-177.755,316.055)} {  MP(PMOS25)                 } -sdev {XFeistel_1/XXOR_9/MMp3} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X8/X6/M0} {} -lloc {(-172.090,319.170)} {  MN(NMOS25)                 } -sdev {XFeistel_1/XXOR_9/MMn4} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X0/X8/X8/M0} {} -lloc {(-177.505,319.230)} {  MN(NMOS25)                 } -sdev {XFeistel_1/XXOR_9/MMn1} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X0/X8/X7/M0} {} -lloc {(-172.840,319.170)} {  MN(NMOS25)                 } -sdev {XFeistel_1/XXOR_9/MMn3} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X0/X8/X9/M0} {} -lloc {(-178.755,319.230)} {  MN(NMOS25)                 } -sdev {XFeistel_1/XXOR_9/MMn2} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X0/X8/X0/X0/M0} {} -lloc {(-166.960,316.255)} {  MP(PMOS25)              } -sdev {XFeistel_1/XXOR_9/XINV_1/MMp1} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X8/X0/X1/M0} {} -lloc {(-166.960,318.850)} {  MN(NMOS25)              } -sdev {XFeistel_1/XXOR_9/XINV_1/MMn1} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X0/X8/X1/X0/M0} {} -lloc {(-183.120,316.255)} {  MP(PMOS25)              } -sdev {XFeistel_1/XXOR_9/XINV_2/MMp1} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X0/X8/X1/X1/M0} {} -lloc {(-183.120,318.850)} {  MN(NMOS25)              } -sdev {XFeistel_1/XXOR_9/XINV_2/MMn1} {  MN(NMOS25) }
+dv_discrep_line {}
+dv_discrep_line {--------------------------------------------------------------------------------------------------------------}
+dv_discrep_line {}
+dv_discrep_line {(_xor2v)                                                  (_xor2v)}
+dv_discrep_line {  } -lport {in2} {: } -lnet {cipher_text6} {                                         } -sport {in1} {: } -snet {cipher_text6} {}
+dv_discrep_line {  } -lport {out} {: } -lnet {62} {                                                   } -sport {out} {: } -snet {XFeistel_2/S0_In<0>} {}
+dv_discrep_line {  } -lport {sup1} {: } -lnet {Vdd} {                                                 } -sport {sup1} {: } -snet {Vdd} {}
+dv_discrep_line {  } -lport {sup2} {: } -lnet {Gnd} {                                                 } -sport {sup2} {: } -snet {Gnd} {}
+dv_discrep_line {  } -lport {in1} {: } -lnet {key<7>} {                                               ** } -snet {key<7>} { **}
+dv_discrep_line {  ** no similar net **                                      } -sport {in2} {: } -snet {N_2} {}
+dv_discrep_line {}
+dv_discrep_line {Devices: }
+dv_discrep_line {  } -ldev {X1/X6/X2/M0} {} -lloc {(-102.730,159.465)} {  MP(PMOS25)                 } -sdev {XFeistel_2/XXOR_4/MMp2} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X1/X6/X5/M0} {} -lloc {(-96.065,159.625)} {  MP(PMOS25)                  } -sdev {XFeistel_2/XXOR_4/MMp1} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X1/X6/X3/M0} {} -lloc {(-101.480,159.465)} {  MP(PMOS25)                 } -sdev {XFeistel_2/XXOR_4/MMp4} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X1/X6/X4/M0} {} -lloc {(-96.815,159.625)} {  MP(PMOS25)                  } -sdev {XFeistel_2/XXOR_4/MMp3} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X1/X6/X6/M0} {} -lloc {(-102.480,156.510)} {  MN(NMOS25)                 } -sdev {XFeistel_2/XXOR_4/MMn4} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X1/X6/X8/M0} {} -lloc {(-97.065,156.450)} {  MN(NMOS25)                  } -sdev {XFeistel_2/XXOR_4/MMn1} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X1/X6/X7/M0} {} -lloc {(-101.730,156.510)} {  MN(NMOS25)                 } -sdev {XFeistel_2/XXOR_4/MMn3} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X1/X6/X9/M0} {} -lloc {(-95.815,156.450)} {  MN(NMOS25)                  } -sdev {XFeistel_2/XXOR_4/MMn2} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X1/X6/X0/X0/M0} {} -lloc {(-107.610,159.425)} {  MP(PMOS25)              } -sdev {XFeistel_2/XXOR_4/XINV_1/MMp1} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X1/X6/X0/X1/M0} {} -lloc {(-107.610,156.830)} {  MN(NMOS25)              } -sdev {XFeistel_2/XXOR_4/XINV_1/MMn1} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X1/X6/X1/X0/M0} {} -lloc {(-91.450,159.425)} {  MP(PMOS25)               } -sdev {XFeistel_2/XXOR_4/XINV_2/MMp1} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X1/X6/X1/X1/M0} {} -lloc {(-91.450,156.830)} {  MN(NMOS25)               } -sdev {XFeistel_2/XXOR_4/XINV_2/MMn1} {  MN(NMOS25) }
+dv_discrep_line {}
+dv_discrep_line {--------------------------------------------------------------------------------------------------------------}
+dv_discrep_line {}
+dv_discrep_line {(_xor2v)                                                  (_xor2v)}
+dv_discrep_line {  } -lport {in2} {: } -lnet {cipher_text7} {                                         } -sport {in1} {: } -snet {cipher_text7} {}
+dv_discrep_line {  } -lport {out} {: } -lnet {63} {                                                   } -sport {out} {: } -snet {XFeistel_2/S1_In<0>} {}
+dv_discrep_line {  } -lport {sup1} {: } -lnet {Vdd} {                                                 } -sport {sup1} {: } -snet {Vdd} {}
+dv_discrep_line {  } -lport {sup2} {: } -lnet {Gnd} {                                                 } -sport {sup2} {: } -snet {Gnd} {}
+dv_discrep_line {  } -lport {in1} {: } -lnet {key<9>} {                                               ** } -snet {key<9>} { **}
+dv_discrep_line {  ** no similar net **                                      } -sport {in2} {: } -snet {N_10} {}
+dv_discrep_line {}
+dv_discrep_line {Devices: }
+dv_discrep_line {  } -ldev {X1/X5/X2/M0} {} -lloc {(-103.355,355.460)} {  MP(PMOS25)                 } -sdev {XFeistel_2/XXOR_6/MMp2} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X1/X5/X5/M0} {} -lloc {(-96.690,355.620)} {  MP(PMOS25)                  } -sdev {XFeistel_2/XXOR_6/MMp1} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X1/X5/X3/M0} {} -lloc {(-102.105,355.460)} {  MP(PMOS25)                 } -sdev {XFeistel_2/XXOR_6/MMp4} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X1/X5/X4/M0} {} -lloc {(-97.440,355.620)} {  MP(PMOS25)                  } -sdev {XFeistel_2/XXOR_6/MMp3} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X1/X5/X6/M0} {} -lloc {(-103.105,352.505)} {  MN(NMOS25)                 } -sdev {XFeistel_2/XXOR_6/MMn4} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X1/X5/X8/M0} {} -lloc {(-97.690,352.445)} {  MN(NMOS25)                  } -sdev {XFeistel_2/XXOR_6/MMn1} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X1/X5/X7/M0} {} -lloc {(-102.355,352.505)} {  MN(NMOS25)                 } -sdev {XFeistel_2/XXOR_6/MMn3} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X1/X5/X9/M0} {} -lloc {(-96.440,352.445)} {  MN(NMOS25)                  } -sdev {XFeistel_2/XXOR_6/MMn2} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X1/X5/X0/X0/M0} {} -lloc {(-108.235,355.420)} {  MP(PMOS25)              } -sdev {XFeistel_2/XXOR_6/XINV_1/MMp1} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X1/X5/X0/X1/M0} {} -lloc {(-108.235,352.825)} {  MN(NMOS25)              } -sdev {XFeistel_2/XXOR_6/XINV_1/MMn1} {  MN(NMOS25) }
+dv_discrep_line {  } -ldev {X1/X5/X1/X0/M0} {} -lloc {(-92.075,355.420)} {  MP(PMOS25)               } -sdev {XFeistel_2/XXOR_6/XINV_2/MMp1} {  MP(PMOS25) }
+dv_discrep_line {  } -ldev {X1/X5/X1/X1/M0} {} -lloc {(-92.075,352.825)} {  MN(NMOS25)               } -sdev {XFeistel_2/XXOR_6/XINV_2/MMn1} {  MN(NMOS25) }
+dv_discrep_line {}
+dv_end

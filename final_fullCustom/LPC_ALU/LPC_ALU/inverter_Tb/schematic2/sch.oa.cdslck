@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      vlsi
+HostName                       elc-vlsi-ecng-31-lnx
+ProcessIdentifier              21208
+ProcessCreationTime_UTC        1701676565
+ProcessCreationTime_Readable   Mon Dec  4 09:56:05 2023 
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /home/vlsi/ClkDivider_Project/ClkDivider/inverter_Tb/schematic2/sch.oa.cdslck
+TimeEditLocked                 Mon Dec  4 12:57:21 2023 

@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      vlsi
+HostName                       elc-vlsi-sm-13-lnx
+ProcessIdentifier              21775
+ProcessCreationTime_UTC        1713624346
+ProcessCreationTime_Readable   Sat Apr 20 16:45:46 2024 
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /home/vlsi/Midterm_HHAF/Midterm_HHAF/Nand_gate/layout/layout.oa.cdslck
+TimeEditLocked                 Sat Apr 20 16:48:01 2024 

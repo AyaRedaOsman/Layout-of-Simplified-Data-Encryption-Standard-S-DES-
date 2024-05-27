@@ -1,0 +1,6 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/Decode4x16.dv
+dv_start matched                                  
+dv_cell {Decode4x16} {Decode4x16} matched
+dv_obj_count -transformed_nets {68 68} -transformed_inst {62 62} -transformed_port {22 22}
+dv_end

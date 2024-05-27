@@ -1,0 +1,9 @@
+# Automagically generated file: Please do not edit!
+lvs_ExtfVersion 3
+lvs_ExtRunTimes 1713627279 1713627279
+lvs_ExtOutFile RUNDIR /home/vlsi/Midterm_HHAF
+lvs_ExtOutFile RULES_FILE ___Generic_250nm_LVS.cal___
+lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}
+lvs_ExtInfoDfmSummary {0}
+lvs_ExtOutFile LAYOUT_NETLIST Nand_gate.sp
+lvs_ExtOutFile EXTRACTION_REPORT Nand_gate.lvs.report.ext

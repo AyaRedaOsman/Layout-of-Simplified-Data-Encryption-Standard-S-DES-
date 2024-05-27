@@ -1,0 +1,10 @@
+DEFINE LPC_ALU LPC_ALU
+ASSIGN LPC_ALU libMode shared
+INCLUDE /eda/Siemens/Tanner/TannerTools_v2022.2/Process/Generic_250nm/lib.defs
+DEFINE analogLib ../../../../eda/Siemens/Tanner/TannerTools_v2022.2/Process/Standard_Libraries/analogLib
+ASSIGN analogLib libMode shared
+DEFINE S_DES ../S_DES/S_DES
+ASSIGN S_DES libMode shared
+INCLUDE /home/vlsi/Desktop/final_fullCustom/Midterm_HHAF/lib.defs
+DEFINE FinalHHAF ../FinalHHAF/FinalHHAF
+ASSIGN FinalHHAF libMode shared

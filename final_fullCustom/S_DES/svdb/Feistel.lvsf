@@ -1,0 +1,11 @@
+# Automagically generated file: Please do not edit!
+lvs_LvsOutFile RUNDIR /home/vlsi/Desktop/final_fullCustom/S_DES
+lvs_LvsfVersion 4
+lvs_LvsInputSummary {0 0 0}
+lvs_LvsComparisonSummary {3 0 0 0}
+lvs_SourceCase YES
+lvs_LayoutCase YES
+lvs_LvsOutFile LVS_REPORT Feistel.lvs.report
+lvs_LvsOutFile SOURCE_NETLIST Feistel.src.net
+lvs_LvsOutFile RULES_FILE _Generic_250nm_LVS.cal_
+lvs_LvsRunTimes 1716053966 1716053966

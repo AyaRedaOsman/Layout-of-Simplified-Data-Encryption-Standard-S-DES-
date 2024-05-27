@@ -1,0 +1,24 @@
+//
+//  Rule file generated on Fri May 10 19:00:39 2024
+//  by Calibre Interactive v2023.4_17.10    Mon Oct 2 13:57:41 PDT 2023
+//
+//      *** PLEASE DO NOT MODIFY THIS FILE ***
+//
+//
+
+LAYOUT PATH "OR.calibre.db"
+LAYOUT SYSTEM GDSII
+LAYOUT PRIMARY "OR"
+
+DRC RESULTS DATABASE "OR.drc.results" ASCII
+DRC CELL NAME YES CELL SPACE XFORM
+
+DRC SUMMARY REPORT "OR.drc.summary" REPLACE HIER
+
+DRC MAXIMUM RESULTS 1000
+
+DRC MAXIMUM VERTEX 4096
+
+DRC ICSTATION YES
+
+INCLUDE "/home/vlsi/FinalHHAF/_Generic_250nm_DRC.cal_"

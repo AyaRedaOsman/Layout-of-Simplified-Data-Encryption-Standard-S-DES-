@@ -1,0 +1,75 @@
+* SPICE export by:      S-Edit 2022.2.3
+* Export time:          Sun May 12 19:58:09 2024
+* Design path:          /home/vlsi/Desktop/S_DES/lib.defs
+* Library:              S_DES
+* Cell:                 AND
+* Testbench:            Spice
+* View:                 schematic
+* Export as:            subcircuit definition
+* Export mode:          hierarchical
+* Exclude empty:        no
+* Exclude .model:       no
+* Exclude .hdl:         no
+* Exclude .end:         no
+* Expand paths:         no
+* Wrap lines:           no
+* Exclude simulator commands:  no
+* Exclude global pins:         no
+* Exclude instance locations:  no
+* Control property name(s):    LVS SPICE
+
+.SUBCKT NMOS25 D G S B
+.ENDS
+.SUBCKT PMOS25 D G S B
+.ENDS
+.SUBCKT NMOS33 D G S B
+.ENDS
+.SUBCKT PMOS33 D G S B
+.ENDS
+
+*************** Subcircuits ***************
+.subckt Nand_gate In1 In2 Out Gnd Vdd 
+* Library name: Midterm_HHAF
+* Cell name: Nand_gate
+* View name: schematic
+* PORT=Gnd TYPE=Other
+* PORT=In2 TYPE=In
+* PORT=Out TYPE=Out
+* PORT=Vdd TYPE=Other
+* PORT=In1 TYPE=In
+
+MMn1 Out In1 N_1 Gnd NMOS25 w=750n l=250n m=1 ad=487.5f pd=2.8u as=487.5f ps=2.8u nrd=866.66667m nrs=866.66667m mult=1 delvto=0 mulu0=1 $ $x=4000 $y=2700 $w=400 $h=600
+MMn2 N_1 In2 Gnd Gnd NMOS25 w=750n l=250n m=1 ad=487.5f pd=2.8u as=487.5f ps=2.8u nrd=866.66667m nrs=866.66667m mult=1 delvto=0 mulu0=1 $ $x=4000 $y=1500 $w=400 $h=600
+MMp1 Out In2 Vdd Vdd PMOS25 w=1.5u l=250n m=1 ad=975f pd=4.3u as=975f ps=4.3u nrd=433.33333m nrs=433.33333m mult=1 delvto=0 mulu0=1 $ $x=5600 $y=5000 $w=400 $h=600
+MMp2 Out In1 Vdd Vdd PMOS25 w=1.5u l=250n m=1 ad=975f pd=4.3u as=975f ps=4.3u nrd=433.33333m nrs=433.33333m mult=1 delvto=0 mulu0=1 $ $x=3000 $y=5000 $w=400 $h=600
+.ends
+
+.subckt Inverter In Out Gnd Vdd 
+* Library name: Midterm_HHAF
+* Cell name: Inverter
+* View name: schematic
+* PORT=In TYPE=In
+* PORT=Gnd TYPE=Other
+* PORT=Out TYPE=Out
+* PORT=Vdd TYPE=Other
+
+MMn1 Out In Gnd Gnd NMOS25 w=750n l=250n m=1 ad=487.5f pd=2.8u as=487.5f ps=2.8u nrd=866.66667m nrs=866.66667m mult=1 delvto=0 mulu0=1 $ $x=5600 $y=2900 $w=400 $h=600
+MMp1 Out In Vdd Vdd PMOS25 w=1.5u l=250n m=1 ad=975f pd=4.3u as=975f ps=4.3u nrd=433.33333m nrs=433.33333m mult=1 delvto=0 mulu0=1 $ $x=5600 $y=4900 $w=400 $h=600
+.ends
+
+.subckt AND A B Out Gnd Vdd 
+* Library name: S_DES
+* Cell name: AND
+* View name: schematic
+* PORT=A TYPE=In
+* PORT=Out TYPE=Out
+* PORT=Vdd TYPE=Other
+* PORT=Gnd TYPE=Other
+* PORT=B TYPE=In
+
+XInverter_1 N_1 Out Gnd Vdd Inverter $ $x=5300 $y=2900 $w=1800 $h=1000
+XNand_gate_1 B A N_1 Gnd Vdd Nand_gate $ $x=3100 $y=2900 $w=1800 $h=1000
+.ends
+
+
+

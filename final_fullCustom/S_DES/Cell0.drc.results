@@ -1,0 +1,13 @@
+Cell0 1000
+M1.S
+2 2 3 May 10 16:22:58 2024                     
+Rule File Pathname: _Generic_250nm_DRC.cal_
+Rule File Title: Generic 0.25 um Process
+Metal1 to Metal1 Spacing < 0.30 Microns
+e 1 2
+CN Cell0 c 1 0 0 1 0 0 0
+-22930 19450 -22900 19450
+-22750 19690 -22720 19690
+e 2 2
+-22900 19430 -22900 19450
+-22750 19690 -22750 19710

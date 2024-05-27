@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      vlsi
+HostName                       elc-auc-vlsi-17-lnx
+ProcessIdentifier              17693
+ProcessCreationTime_UTC        1713165793
+ProcessCreationTime_Readable   Mon Apr 15 09:23:13 2024 
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /eda/Siemens/Tanner/TannerTools_v2023.2/Tutorials/ClkDivider_Project/ClkDivider/inverter/schematic/sch.oa.cdslck
+TimeEditLocked                 Mon Apr 15 09:24:47 2024 

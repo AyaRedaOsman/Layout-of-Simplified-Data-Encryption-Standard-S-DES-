@@ -1,0 +1,82 @@
+* SPICE export by:      S-Edit 2022.2.3
+* Export time:          Wed May  1 10:53:36 2024
+* Design path:          /home/vlsi/Desktop/LPC_ALU/lib.defs
+* Library:              LPC_ALU
+* Cell:                 Decoder_2to4
+* Testbench:            Spice
+* View:                 schematic
+* Export as:            subcircuit definition
+* Export mode:          hierarchical
+* Exclude empty:        no
+* Exclude .model:       no
+* Exclude .hdl:         no
+* Exclude .end:         no
+* Expand paths:         no
+* Wrap lines:           no
+* Exclude simulator commands:  no
+* Exclude global pins:         no
+* Exclude instance locations:  no
+* Control property name(s):    LVS SPICE
+
+.SUBCKT NMOS25 D G S B
+.ENDS
+.SUBCKT PMOS25 D G S B
+.ENDS
+.SUBCKT NMOS33 D G S B
+.ENDS
+.SUBCKT PMOS33 D G S B
+.ENDS
+
+*************** Subcircuits ***************
+.subckt inverter In Out Gnd Vdd 
+* Library name: LPC_ALU
+* Cell name: inverter
+* View name: schematic
+* PORT=Vdd TYPE=Other
+* PORT=Gnd TYPE=Other
+* PORT=Out TYPE=Out
+* PORT=In TYPE=In
+
+MMn2 Out In Gnd Gnd NMOS25 w=750n l=250n m=1 ad=487.5f pd=2.8u as=487.5f ps=2.8u nrd=866.66667m nrs=866.66667m mult=1 delvto=0 mulu0=1 $ $x=4500 $y=3400 $w=400 $h=600
+MMp2 Out In Vdd Vdd PMOS25 w=1.5u l=250n m=1 ad=975f pd=4.3u as=975f ps=4.3u nrd=433.33333m nrs=433.33333m mult=1 delvto=0 mulu0=1 $ $x=4500 $y=4100 $w=400 $h=600
+.ends
+
+.subckt nor_2 A B Out Gnd Vdd 
+* Library name: LPC_ALU
+* Cell name: nor_2
+* View name: schematic
+* PORT=Vdd TYPE=Other
+* PORT=A TYPE=In
+* PORT=Gnd TYPE=Other
+* PORT=B TYPE=In
+* PORT=Out TYPE=Out
+
+MMn1 Out A Gnd Gnd NMOS25 w=750n l=250n m=1 ad=487.5f pd=2.8u as=487.5f ps=2.8u nrd=866.66667m nrs=866.66667m mult=1 delvto=0 mulu0=1 $ $x=4200 $y=2600 $w=400 $h=600
+MMn2 Out B Gnd Gnd NMOS25 w=750n l=250n m=1 ad=487.5f pd=2.8u as=487.5f ps=2.8u nrd=866.66667m nrs=866.66667m mult=1 delvto=0 mulu0=1 $ $x=5500 $y=2600 $w=400 $h=600
+MMp1 N_1 A Vdd Vdd PMOS25 w=1.5u l=250n m=1 ad=975f pd=4.3u as=975f ps=4.3u nrd=433.33333m nrs=433.33333m mult=1 delvto=0 mulu0=1 $ $x=4900 $y=5100 $w=400 $h=600
+MMp2 Out B N_1 Vdd PMOS25 w=1.5u l=250n m=1 ad=975f pd=4.3u as=975f ps=4.3u nrd=433.33333m nrs=433.33333m mult=1 delvto=0 mulu0=1 $ $x=4900 $y=4400 $w=400 $h=600
+.ends
+
+.subckt Decoder_2to4 A<0> A<1> D<0> D<1> D<2> D<3> Gnd Vdd 
+* Library name: LPC_ALU
+* Cell name: Decoder_2to4
+* View name: schematic
+* PORT=Vdd TYPE=Other
+* PORT=Gnd TYPE=Other
+* PORT=A<1> TYPE=InOut
+* PORT=A<0> TYPE=InOut
+* PORT=D<1> TYPE=InOut
+* PORT=D<2> TYPE=InOut
+* PORT=D<3> TYPE=InOut
+* PORT=D<0> TYPE=InOut
+
+Xinverter_1 A<0> N_1 Gnd Vdd inverter $ $x=1950 $y=5200 $w=900 $h=1800 $r=90
+Xinverter_2 A<1> N_2 Gnd Vdd inverter $ $x=3150 $y=5200 $w=900 $h=1800 $r=90
+Xnor_2_1 A<1> A<0> D<0> Gnd Vdd nor_2 $ $x=7300 $y=4200 $w=1800 $h=600
+Xnor_2_2 A<1> N_1 D<1> Gnd Vdd nor_2 $ $x=7300 $y=3100 $w=1800 $h=600
+Xnor_2_3 A<0> N_2 D<2> Gnd Vdd nor_2 $ $x=7300 $y=2100 $w=1800 $h=600
+Xnor_2_4 N_2 N_1 D<3> Gnd Vdd nor_2 $ $x=7300 $y=1000 $w=1800 $h=600
+.ends
+
+
+

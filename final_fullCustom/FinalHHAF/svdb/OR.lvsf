@@ -1,0 +1,11 @@
+# Automagically generated file: Please do not edit!
+lvs_LvsOutFile RUNDIR /home/vlsi/FinalHHAF
+lvs_LvsfVersion 4
+lvs_LvsInputSummary {0 0 0}
+lvs_LvsComparisonSummary {3 0 0 0}
+lvs_SourceCase YES
+lvs_LayoutCase YES
+lvs_LvsOutFile LVS_REPORT OR.lvs.report
+lvs_LvsOutFile SOURCE_NETLIST OR.src.net
+lvs_LvsOutFile RULES_FILE __Generic_250nm_LVS.cal__
+lvs_LvsRunTimes 1715357285 1715357285

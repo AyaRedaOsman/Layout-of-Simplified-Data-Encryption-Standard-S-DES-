@@ -1,0 +1,3 @@
+DEFINE Midterm_HHAF Midterm_HHAF
+ASSIGN Midterm_HHAF libMode shared
+INCLUDE /home/vlsi/CND_Advanced_Full_Custom/lib.defs

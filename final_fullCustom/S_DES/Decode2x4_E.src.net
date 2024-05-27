@@ -1,0 +1,133 @@
+* SPICE export by:      S-Edit 2022.2.3
+* Export time:          Sat May 18 17:47:49 2024
+* Design path:          /home/vlsi/Desktop/final_fullCustom/S_DES/lib.defs
+* Library:              S_DES
+* Cell:                 Decode2x4_E
+* Testbench:            Spice
+* View:                 schematic
+* Export as:            subcircuit definition
+* Export mode:          hierarchical
+* Exclude empty:        no
+* Exclude .model:       no
+* Exclude .hdl:         no
+* Exclude .end:         no
+* Expand paths:         no
+* Wrap lines:           no
+* Exclude simulator commands:  no
+* Exclude global pins:         no
+* Exclude instance locations:  no
+* Control property name(s):    LVS SPICE
+
+.SUBCKT NMOS25 D G S B
+.ENDS
+.SUBCKT PMOS25 D G S B
+.ENDS
+.SUBCKT NMOS33 D G S B
+.ENDS
+.SUBCKT PMOS33 D G S B
+.ENDS
+
+*************** Subcircuits ***************
+.subckt Nand_gate In1 In2 Out Gnd Vdd 
+* Library name: Midterm_HHAF
+* Cell name: Nand_gate
+* View name: schematic
+* PORT=Gnd TYPE=Other
+* PORT=In2 TYPE=In
+* PORT=Out TYPE=Out
+* PORT=Vdd TYPE=Other
+* PORT=In1 TYPE=In
+
+MMn1 Out In1 N_1 Gnd NMOS25 w=750n l=250n m=1 ad=487.5f pd=2.8u as=487.5f ps=2.8u nrd=866.66667m nrs=866.66667m mult=1 delvto=0 mulu0=1 $ $x=4000 $y=2700 $w=400 $h=600
+MMn2 N_1 In2 Gnd Gnd NMOS25 w=750n l=250n m=1 ad=487.5f pd=2.8u as=487.5f ps=2.8u nrd=866.66667m nrs=866.66667m mult=1 delvto=0 mulu0=1 $ $x=4000 $y=1500 $w=400 $h=600
+MMp1 Out In2 Vdd Vdd PMOS25 w=1.5u l=250n m=1 ad=975f pd=4.3u as=975f ps=4.3u nrd=433.33333m nrs=433.33333m mult=1 delvto=0 mulu0=1 $ $x=5600 $y=5000 $w=400 $h=600
+MMp2 Out In1 Vdd Vdd PMOS25 w=1.5u l=250n m=1 ad=975f pd=4.3u as=975f ps=4.3u nrd=433.33333m nrs=433.33333m mult=1 delvto=0 mulu0=1 $ $x=3000 $y=5000 $w=400 $h=600
+.ends
+
+.subckt inverter In Out Gnd Vdd 
+* Library name: LPC_ALU
+* Cell name: inverter
+* View name: schematic
+* PORT=Vdd TYPE=Other
+* PORT=Gnd TYPE=Other
+* PORT=Out TYPE=Out
+* PORT=In TYPE=In
+
+MMn2 Out In Gnd Gnd NMOS25 w=750n l=250n m=1 ad=487.5f pd=2.8u as=487.5f ps=2.8u nrd=866.66667m nrs=866.66667m mult=1 delvto=0 mulu0=1 $ $x=4500 $y=3400 $w=400 $h=600
+MMp2 Out In Vdd Vdd PMOS25 w=1.5u l=250n m=1 ad=975f pd=4.3u as=975f ps=4.3u nrd=433.33333m nrs=433.33333m mult=1 delvto=0 mulu0=1 $ $x=4500 $y=4100 $w=400 $h=600
+.ends
+
+.subckt AND_Final A B Out Gnd Vdd 
+* Library name: S_DES
+* Cell name: AND_Final
+* View name: schematic
+* PORT=Out TYPE=Out
+* PORT=Vdd TYPE=Other
+* PORT=Gnd TYPE=Other
+* PORT=B TYPE=In
+* PORT=A TYPE=In
+
+Xinverter_1 N_1 Out Gnd Vdd inverter $ $x=5200 $y=2950 $w=1800 $h=900
+XNand_gate_1 B A N_1 Gnd Vdd Nand_gate $ $x=3100 $y=2900 $w=1800 $h=1000
+.ends
+
+.subckt nor_2 A B Out Gnd Vdd 
+* Library name: LPC_ALU
+* Cell name: nor_2
+* View name: schematic
+* PORT=Vdd TYPE=Other
+* PORT=A TYPE=In
+* PORT=Gnd TYPE=Other
+* PORT=B TYPE=In
+* PORT=Out TYPE=Out
+
+MMn1 Out A Gnd Gnd NMOS25 w=750n l=250n m=1 ad=487.5f pd=2.8u as=487.5f ps=2.8u nrd=866.66667m nrs=866.66667m mult=1 delvto=0 mulu0=1 $ $x=4200 $y=2600 $w=400 $h=600
+MMn2 Out B Gnd Gnd NMOS25 w=750n l=250n m=1 ad=487.5f pd=2.8u as=487.5f ps=2.8u nrd=866.66667m nrs=866.66667m mult=1 delvto=0 mulu0=1 $ $x=5500 $y=2600 $w=400 $h=600
+MMp1 N_1 A Vdd Vdd PMOS25 w=1.5u l=250n m=1 ad=975f pd=4.3u as=975f ps=4.3u nrd=433.33333m nrs=433.33333m mult=1 delvto=0 mulu0=1 $ $x=4900 $y=5100 $w=400 $h=600
+MMp2 Out B N_1 Vdd PMOS25 w=1.5u l=250n m=1 ad=975f pd=4.3u as=975f ps=4.3u nrd=433.33333m nrs=433.33333m mult=1 delvto=0 mulu0=1 $ $x=4900 $y=4400 $w=400 $h=600
+.ends
+
+.subckt Decoder_2to4 A0 A1 D0 D1 D2 D3 Gnd Vdd 
+* Library name: LPC_ALU
+* Cell name: Decoder_2to4
+* View name: schematic
+* PORT=Vdd TYPE=Other
+* PORT=Gnd TYPE=Other
+* PORT=A1 TYPE=In
+* PORT=D0 TYPE=Out
+* PORT=A0 TYPE=In
+* PORT=D1 TYPE=Out
+* PORT=D2 TYPE=Out
+* PORT=D3 TYPE=Out
+
+Xinverter_1 A0 N_1 Gnd Vdd inverter $ $x=1950 $y=5200 $w=900 $h=1800 $r=90
+Xinverter_2 A1 N_2 Gnd Vdd inverter $ $x=3150 $y=5200 $w=900 $h=1800 $r=90
+Xnor_2_1 A1 A0 D0 Gnd Vdd nor_2 $ $x=7300 $y=4200 $w=1800 $h=600
+Xnor_2_2 A1 N_1 D1 Gnd Vdd nor_2 $ $x=7300 $y=3100 $w=1800 $h=600
+Xnor_2_3 A0 N_2 D2 Gnd Vdd nor_2 $ $x=7300 $y=2100 $w=1800 $h=600
+Xnor_2_4 N_2 N_1 D3 Gnd Vdd nor_2 $ $x=7300 $y=1000 $w=1800 $h=600
+.ends
+
+.subckt Decode2x4_E A0 A1 E O0 O1 O2 O3 Gnd Vdd 
+* Library name: S_DES
+* Cell name: Decode2x4_E
+* View name: schematic
+* PORT=Vdd TYPE=Other
+* PORT=Gnd TYPE=Other
+* PORT=O0 TYPE=Out
+* PORT=O3 TYPE=Out
+* PORT=O2 TYPE=Out
+* PORT=O1 TYPE=Out
+* PORT=E TYPE=InOut
+* PORT=A1 TYPE=In
+* PORT=A0 TYPE=In
+
+XAND_1 N_4 E O3 Gnd Vdd AND_Final $ $x=6650 $y=3650 $w=900 $h=500
+XAND_2 N_3 E O2 Gnd Vdd AND_Final $ $x=6650 $y=2750 $w=900 $h=500
+XAND_3 N_2 E O1 Gnd Vdd AND_Final $ $x=6650 $y=1850 $w=900 $h=500
+XAND_4 N_1 E O0 Gnd Vdd AND_Final $ $x=6650 $y=950 $w=900 $h=500
+XDecoder_2to4_1 A0 A1 N_1 N_2 N_3 N_4 Gnd Vdd Decoder_2to4 $ $x=2306 $y=3550 $w=900 $h=700
+.ends
+
+
+

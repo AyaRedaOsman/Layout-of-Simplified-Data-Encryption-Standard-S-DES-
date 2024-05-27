@@ -1,0 +1,9 @@
+# Automagically generated file: Please do not edit!
+lvs_ExtfVersion 3
+lvs_ExtRunTimes 1713637745 1713637745
+lvs_ExtOutFile RUNDIR /home/vlsi/Midterm_HHAF
+lvs_ExtOutFile RULES_FILE ____Generic_250nm_LVS.cal____
+lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}
+lvs_ExtInfoDfmSummary {0}
+lvs_ExtOutFile LAYOUT_NETLIST XOR.sp
+lvs_ExtOutFile EXTRACTION_REPORT XOR.lvs.report.ext

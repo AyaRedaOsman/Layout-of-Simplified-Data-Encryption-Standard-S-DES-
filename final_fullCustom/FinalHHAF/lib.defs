@@ -1,0 +1,9 @@
+DEFINE FinalHHAF FinalHHAF
+ASSIGN FinalHHAF libMode shared
+INCLUDE /home/vlsi/Midterm_HHAF/lib.defs
+DEFINE S_DES ../S_DES/S_DES
+ASSIGN S_DES libMode shared
+DEFINE LPC_ALU ../LPC_ALU
+ASSIGN LPC_ALU libMode shared
+INCLUDE /home/vlsi/CND_Advanced_Full_Custom/lib.defs
+INCLUDE /home/vlsi/CND_Advanced_Full_Custom/CND_Advanced_Full_Custom/lib.defs

@@ -1,0 +1,1212 @@
+
+
+
+                  ##################################################
+                  ##                                              ##
+                  ##         C A L I B R E    S Y S T E M         ##
+                  ##                                              ##
+                  ##             L V S   R E P O R T              ##
+                  ##                                              ##
+                  ##################################################
+
+
+
+REPORT FILE NAME:         DES.lvs.report
+LAYOUT NAME:              DES.sp ('DES')
+SOURCE NAME:              DES.src.net ('DES')
+RULE FILE:                _Generic_250nm_LVS.cal_
+CREATION TIME:            Sat May 18 20:59:51 2024
+CURRENT DIRECTORY:        /home/vlsi/Desktop/final_fullCustom/S_DES
+USER NAME:                vlsi
+CALIBRE VERSION:          v2024.1_15.11    Mon Jan 8 15:16:13 PST 2024
+
+
+
+                               OVERALL COMPARISON RESULTS
+
+
+
+                  #   #         #####################  
+                   # #          #                   #  
+                    #           #     INCORRECT     #  
+                   # #          #                   #  
+                  #   #         #####################  
+
+
+  Error:    Different numbers of nets.
+  Error:    Different numbers of instances.
+  Error:    Connectivity errors.
+
+
+**************************************************************************************************************
+                                      CELL  SUMMARY
+**************************************************************************************************************
+
+  Result         Layout                        Source
+  -----------    -----------                   --------------
+  INCORRECT      DES                           DES
+
+
+
+**************************************************************************************************************
+                                      LVS PARAMETERS
+**************************************************************************************************************
+
+
+o LVS Setup:
+
+   // LVS COMPONENT TYPE PROPERTY
+   // LVS COMPONENT SUBTYPE PROPERTY
+   // LVS PIN NAME PROPERTY
+   // LVS POWER NAME
+   // LVS GROUND NAME
+   LVS CELL SUPPLY                        NO
+   LVS RECOGNIZE GATES                    ALL
+   // LVS HCELL REPORT
+   LVS IGNORE PORTS                       NO
+   LVS CHECK PORT NAMES                   NO
+   LVS IGNORE TRIVIAL NAMED PORTS         NO
+   LVS BUILTIN DEVICE PIN SWAP            YES
+   LVS ALL CAPACITOR PINS SWAPPABLE       NO
+   LVS DISCARD PINS BY DEVICE             NO
+   LVS SOFT SUBSTRATE PINS                NO
+   LVS INJECT LOGIC                       YES
+   LVS EXPAND UNBALANCED CELLS            YES
+   LVS FLATTEN INSIDE CELL                NO
+   LVS EXPAND SEED PROMOTIONS             NO
+   LVS PRESERVE PARAMETERIZED CELLS       NO
+   LVS GLOBALS ARE PORTS                  YES
+   LVS RELAX INITIAL CPOINTS              NONE
+   LVS REVERSE WL                         NO
+   // LVS NETLIST FILTER DEVICES          NO
+   // LVS PRESERVE BOX PORTS              NO
+   LVS SPICE PREFER PINS                  NO
+   LVS SPICE SLASH IS SPACE               YES
+   LVS SPICE ALLOW FLOATING PINS          YES
+   // LVS SPICE ALLOW INLINE PARAMETERS     
+   LVS SPICE ALLOW UNQUOTED STRINGS       NO
+   LVS SPICE CONDITIONAL LDD              NO
+   LVS SPICE CULL PRIMITIVE SUBCIRCUITS   NO
+   // LVS SPICE EXCLUDE CELL SOURCE
+   // LVS SPICE EXCLUDE CELL LAYOUT
+   LVS SPICE IMPLIED MOS AREA             NO
+   // LVS SPICE MULTIPLIER NAME
+   LVS SPICE OVERRIDE GLOBALS             NO
+   LVS SPICE REDEFINE PARAM               NO
+   LVS SPICE REPLICATE DEVICES            NO
+   LVS SPICE SCALE X PARAMETERS           NO
+   LVS SPICE STRICT WL                    NO
+   // LVS SPICE OPTION
+   LVS STRICT SUBTYPES                    NO
+   LVS EXACT SUBTYPES                     NO
+   LAYOUT CASE                            YES
+   SOURCE CASE                            YES
+   LVS COMPARE CASE                       NO
+   LVS COMPARE CASE STRICT                NO
+   LVS DOWNCASE DEVICE                    NO
+   LVS REPORT MAXIMUM                     50
+   LVS PROPERTY RESOLUTION MAXIMUM        32
+   // LVS SIGNATURE MAXIMUM
+   // LVS FILTER UNUSED OPTION
+   // LVS REPORT OPTION
+   LVS REPORT UNITS                       YES
+   LVS SWAPPABLE HCELL PINS               GENERAL
+   // LVS NON USER NAME PORT
+   // LVS NON USER NAME NET
+   // LVS NON USER NAME INSTANCE
+   // LVS IGNORE DEVICE PIN
+   // LVS PREFER NETS FILTER SOURCE
+   // LVS PREFER NETS FILTER LAYOUT
+   LVS PREFER PORT NETS                   NO
+   LVS EXPAND ON ERROR                    NO
+   LVS EXPAND AMBIGUOUSLY HIGH SHORTED HCELLS NO
+
+   // Reduction
+
+   LVS REDUCE SERIES MOS                  NO
+   LVS REDUCE PARALLEL MOS                YES
+   LVS REDUCE SEMI SERIES MOS             NO
+   LVS REDUCE SPLIT GATES                 YES
+   LVS REDUCE PARALLEL BIPOLAR            YES
+   LVS REDUCE SERIES CAPACITORS           YES
+   LVS REDUCE PARALLEL CAPACITORS         YES
+   LVS REDUCE SERIES RESISTORS            YES
+   LVS REDUCE PARALLEL RESISTORS          YES
+   LVS REDUCE PARALLEL DIODES             YES
+   LVS REDUCTION PRIORITY                 PARALLEL
+   
+   LVS SHORT EQUIVALENT NODES             NO
+
+   // Trace Property
+
+   TRACE PROPERTY  mn  l l 0
+   TRACE PROPERTY  mn  w w 0
+   TRACE PROPERTY  mp  l l 0
+   TRACE PROPERTY  mp  w w 0
+   TRACE PROPERTY  m  l l 0
+   TRACE PROPERTY  m  w w 0
+   TRACE PROPERTY  c  l l 0.5
+   TRACE PROPERTY  c  w w 0.5
+   TRACE PROPERTY  c  c c 0.5
+   TRACE PROPERTY  r  l l 0.5
+   TRACE PROPERTY  r  w w 0.5
+   TRACE PROPERTY  r  r r 0.5
+
+
+
+                   CELL COMPARISON RESULTS ( TOP LEVEL )
+
+
+
+                  #   #         #####################  
+                   # #          #                   #  
+                    #           #     INCORRECT     #  
+                   # #          #                   #  
+                  #   #         #####################  
+
+
+  Error:    Different numbers of nets (see below).
+  Error:    Different numbers of instances (see below).
+  Error:    Connectivity errors.
+
+LAYOUT CELL NAME:         DES
+SOURCE CELL NAME:         DES
+
+--------------------------------------------------------------------------------------------------------------
+
+INITIAL NUMBERS OF OBJECTS
+--------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:             28        28
+
+ Nets:             643       660    *
+
+ Instances:        600       600         MN (4 pins)
+                   600       600         MP (4 pins)
+                     0        16    *    V (2 pins)
+                ------    ------
+ Total Inst:      1200      1216
+
+
+NUMBERS OF OBJECTS AFTER TRANSFORMATION
+---------------------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:             28        28
+
+ Nets:             312       324    *
+
+ Instances:          2         0    *    MP (4 pins)
+                     0        16    *    V (2 pins)
+                   116       112    *    _invv (4 pins)
+                    64        64         _nand2v (5 pins)
+                    80        80         _nor2v (5 pins)
+                     8         8         _nor7v (10 pins)
+                     4         0    *    _smn2v (4 pins)
+                     3         0    *    _smp2v (4 pins)
+                    22        24    *    _xor2v (5 pins)
+                ------    ------
+ Total Inst:       299       304
+
+
+       * = Number of objects in layout different from number in source.
+
+
+
+**************************************************************************************************************
+                                 INCORRECT OBJECTS
+**************************************************************************************************************
+
+
+LEGEND:
+-------
+
+  ne  = Naming Error (same layout name found in source
+        circuit, but object was matched otherwise).
+
+
+**************************************************************************************************************
+                                   INCORRECT NETS
+
+DISC#  LAYOUT NAME                                               SOURCE NAME
+**************************************************************************************************************
+
+  1    Net cipher_text3                                          cipher_text3
+       --- 6 Connections On This Net ---                         --- 4 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_invv):in                                                ** missing connection **
+         X1/X7/X0/X1/M0(-107.560,147.770):g
+         X1/X7/X0/X0/M0(-107.560,150.365):g
+       
+       
+       (_xor2v):out                                              ** missing connection **
+         X0/X8/X9/M0(-178.755,319.230):d
+         X0/X8/X8/M0(-177.505,319.230):s
+         X0/X8/X4/M0(-177.755,316.055):d
+         X0/X8/X5/M0(-178.505,316.055):d
+       
+       
+       (_smn2v):in2                                              ** missing connection **
+         X1/X7/X6/M0(-102.430,147.450):g
+       
+       
+       X1/X7/X2/M0(-102.680,150.405):g                           ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_xor2v):out
+                                                                   XFeistel_1/XXOR_12/MMn2:d
+                                                                   XFeistel_1/XXOR_12/MMn1:s
+                                                                   XFeistel_1/XXOR_12/MMp3:d
+                                                                   XFeistel_1/XXOR_12/MMp1:d
+       
+       
+       ** missing connection **                                  (_xor2v):in1
+                                                                   XFeistel_2/XXOR_3/XINV_1/MMn1:g
+                                                                   XFeistel_2/XXOR_3/XINV_1/MMp1:g
+                                                                   XFeistel_2/XXOR_3/MMn4:g
+                                                                   XFeistel_2/XXOR_3/MMp2:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+  2    Net cipher_text4                                          cipher_text4
+       --- 4 Connections On This Net ---                         --- 4 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_xor2v):out                                              ** missing connection **
+         X0/X10/X7/M0(-170.845,66.020):d
+         X0/X10/X6/M0(-170.095,66.020):s
+         X0/X10/X2/M0(-169.845,68.975):d
+         X0/X10/X3/M0(-171.095,68.975):d
+       
+       
+       ** missing connection **                                  (_xor2v):out
+                                                                   XFeistel_1/XXOR_9/MMn2:d
+                                                                   XFeistel_1/XXOR_9/MMn1:s
+                                                                   XFeistel_1/XXOR_9/MMp3:d
+                                                                   XFeistel_1/XXOR_9/MMp1:d
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+  3    Net key<5>                                                key<5>
+       --- 3 Connections On This Net ---                         --- 3 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_xor2v):in2                                              ** missing connection **
+         X0/X0/X1/X1/M0(-346.780,276.670):g
+         X0/X0/X1/X0/M0(-346.780,279.265):g
+         X0/X0/X8/M0(-352.395,276.290):g
+         X0/X0/X4/M0(-352.145,279.465):g
+       
+       
+       (_xor2v):in1                                              ** missing connection **
+         X1/X3/X1/X1/M0(-96.985,95.270):g
+         X1/X3/X1/X0/M0(-96.985,97.865):g
+         X1/X3/X8/M0(-102.600,94.890):g
+         X1/X3/X4/M0(-102.350,98.065):g
+       
+       
+       ** missing connection **                                  XKey_Generation_1/VPassThru11:pos
+       ** missing connection **                                  XKey_Generation_1/VPassThru8:pos
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+  4    Net key<9>                                                key<9>
+       --- 3 Connections On This Net ---                         --- 3 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_xor2v):in1                                              ** missing connection **
+         X1/X5/X1/X1/M0(-92.075,352.825):g
+         X1/X5/X1/X0/M0(-92.075,355.420):g
+         X1/X5/X8/M0(-97.690,352.445):g
+         X1/X5/X4/M0(-97.440,355.620):g
+       
+       
+       (_xor2v):in2                                              ** missing connection **
+         X0/X1/X1/X1/M0(-346.725,291.075):g
+         X0/X1/X1/X0/M0(-346.725,293.670):g
+         X0/X1/X8/M0(-352.340,290.695):g
+         X0/X1/X4/M0(-352.090,293.870):g
+       
+       
+       ** missing connection **                                  XKey_Generation_1/VPassThru13:pos
+       ** missing connection **                                  XKey_Generation_1/VPassThru7:pos
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+  5    Net key<8>                                                key<8>
+       --- 2 Connections On This Net ---                         --- 3 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_xor2v):in2                                              ** missing connection **
+         X0/X3/X1/X1/M0(-346.160,95.270):g
+         X0/X3/X1/X0/M0(-346.160,97.865):g
+         X0/X3/X8/M0(-351.775,94.890):g
+         X0/X3/X4/M0(-351.525,98.065):g
+       
+       
+       ** missing connection **                                  XKey_Generation_1/VPassThru16:pos
+       ** missing connection **                                  XKey_Generation_1/VPassThru2:pos
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+  6    Net key<2>                                                key<2>
+       --- 7 Connections On This Net ---                         --- 3 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_invv):in                                                ** missing connection **
+         X1/X7/X1/X1/M0(-91.400,147.770):g
+         X1/X7/X1/X0/M0(-91.400,150.365):g
+       
+       
+       (_xor2v):in2                                              ** missing connection **
+         X0/X4/X1/X1/M0(-341.425,342.365):g
+         X0/X4/X1/X0/M0(-341.425,344.960):g
+         X0/X4/X8/M0(-347.040,341.985):g
+         X0/X4/X4/M0(-346.790,345.160):g
+       
+       
+       (_smn2v):in1                                              ** missing connection **
+         X1/X7/X8/M0(-97.015,147.390):g
+       
+       
+       (_smp2v):in1                                              ** missing connection **
+         X1/X7/X4/M0(-96.765,150.565):g
+       
+       
+       X1/X7/X5/M0(-96.015,150.565):d                            ** missing connection **
+       X1/X7/X2/M0(-102.680,150.405):s                           ** missing connection **
+       
+       ** missing connection **                                  XKey_Generation_1/VPassThru10:pos
+       ** missing connection **                                  XKey_Generation_1/VPassThru6:pos
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+  7    Net key<7>                                                key<7>
+       --- 3 Connections On This Net ---                         --- 3 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_xor2v):in1                                              ** missing connection **
+         X1/X6/X1/X1/M0(-91.450,156.830):g
+         X1/X6/X1/X0/M0(-91.450,159.425):g
+         X1/X6/X8/M0(-97.065,156.450):g
+         X1/X6/X4/M0(-96.815,159.625):g
+       
+       
+       (_xor2v):in2                                              ** missing connection **
+         X0/X5/X1/X1/M0(-341.250,352.825):g
+         X0/X5/X1/X0/M0(-341.250,355.420):g
+         X0/X5/X8/M0(-346.865,352.445):g
+         X0/X5/X4/M0(-346.615,355.620):g
+       
+       
+       ** missing connection **                                  XKey_Generation_1/VPassThru9:pos
+       ** missing connection **                                  XKey_Generation_1/VPassThru5:pos
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+  8    Net key<0>                                                key<0>
+       --- 3 Connections On This Net ---                         --- 3 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_xor2v):in1                                              ** missing connection **
+         X1/X1/X1/X1/M0(-97.550,291.075):g
+         X1/X1/X1/X0/M0(-97.550,293.670):g
+         X1/X1/X8/M0(-103.165,290.695):g
+         X1/X1/X4/M0(-102.915,293.870):g
+       
+       
+       (_xor2v):in2                                              ** missing connection **
+         X0/X6/X1/X1/M0(-340.625,156.830):g
+         X0/X6/X1/X0/M0(-340.625,159.425):g
+         X0/X6/X8/M0(-346.240,156.450):g
+         X0/X6/X4/M0(-345.990,159.625):g
+       
+       
+       ** missing connection **                                  XKey_Generation_1/VPassThru15:pos
+       ** missing connection **                                  XKey_Generation_1/VPassThru3:pos
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+  9    Net key<3>                                                key<3>
+       --- 2 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_xor2v):in2                                              ** missing connection **
+         X0/X2/X1/X1/M0(-346.500,81.325):g
+         X0/X2/X1/X0/M0(-346.500,83.920):g
+         X0/X2/X8/M0(-352.115,80.945):g
+         X0/X2/X4/M0(-351.865,84.120):g
+       
+       
+       ** missing connection **                                  XKey_Generation_1/VPassThru4:pos
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 10    Net key<6>                                                key<6>
+       --- 2 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_xor2v):in2                                              ** missing connection **
+         X0/X7/X1/X1/M0(-340.575,147.770):g
+         X0/X7/X1/X0/M0(-340.575,150.365):g
+         X0/X7/X8/M0(-346.190,147.390):g
+         X0/X7/X4/M0(-345.940,150.565):g
+       
+       
+       ** missing connection **                                  XKey_Generation_1/VPassThru1:pos
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 11    Net key<4>                                                key<4>
+       --- 2 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_xor2v):in1                                              ** missing connection **
+         X1/X2/X1/X1/M0(-97.325,81.325):g
+         X1/X2/X1/X0/M0(-97.325,83.920):g
+         X1/X2/X8/M0(-102.940,80.945):g
+         X1/X2/X4/M0(-102.690,84.120):g
+       
+       
+       ** missing connection **                                  XKey_Generation_1/VPassThru12:pos
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 12    Net key<1>                                                key<1>
+       --- 2 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_xor2v):in1                                              ** missing connection **
+         X1/X4/X1/X1/M0(-92.250,342.365):g
+         X1/X4/X1/X0/M0(-92.250,344.960):g
+         X1/X4/X8/M0(-97.865,341.985):g
+         X1/X4/X4/M0(-97.615,345.160):g
+       
+       
+       ** missing connection **                                  XKey_Generation_1/VPassThru14:pos
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 13    Net X1/91                                                 ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 14    Net X1/X7/11                                              ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 15    Net X1/X11/11                                             ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 16    ** no similar net **                                      N_1
+
+--------------------------------------------------------------------------------------------------------------
+
+ 17    ** no similar net **                                      N_3
+
+--------------------------------------------------------------------------------------------------------------
+
+ 18    ** no similar net **                                      N_5
+
+--------------------------------------------------------------------------------------------------------------
+
+ 19    ** no similar net **                                      N_7
+
+--------------------------------------------------------------------------------------------------------------
+
+ 20    ** no similar net **                                      N_9
+
+--------------------------------------------------------------------------------------------------------------
+
+ 21    ** no similar net **                                      N_11
+
+--------------------------------------------------------------------------------------------------------------
+
+ 22    ** no similar net **                                      N_13
+
+--------------------------------------------------------------------------------------------------------------
+
+ 23    ** no similar net **                                      N_15
+
+--------------------------------------------------------------------------------------------------------------
+
+ 24    ** no similar net **                                      N_2
+
+--------------------------------------------------------------------------------------------------------------
+
+ 25    ** no similar net **                                      N_4
+
+--------------------------------------------------------------------------------------------------------------
+
+ 26    ** no similar net **                                      N_6
+
+--------------------------------------------------------------------------------------------------------------
+
+ 27    ** no similar net **                                      N_8
+
+--------------------------------------------------------------------------------------------------------------
+
+ 28    ** no similar net **                                      N_10
+
+--------------------------------------------------------------------------------------------------------------
+
+ 29    ** no similar net **                                      N_12
+
+--------------------------------------------------------------------------------------------------------------
+
+ 30    ** no similar net **                                      N_14
+
+
+**************************************************************************************************************
+                                 INCORRECT INSTANCES
+
+DISC#  LAYOUT NAME                                               SOURCE NAME
+**************************************************************************************************************
+
+ 31    X1/X7/X2/M0(-102.680,150.405)  MP(PMOS25)                 ** missing instance **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 32    X1/X7/X5/M0(-96.015,150.565)  MP(PMOS25)                  ** missing instance **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 33    (_smp2v)                                                  ** missing injected instance **
+
+       Devices: 
+         X1/X7/X4/M0(-96.765,150.565)  MP(PMOS25)
+         X1/X7/X3/M0(-101.430,150.405)  MP(PMOS25)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 34    (_smn2v)                                                  ** missing injected instance **
+
+       Devices: 
+         X1/X7/X9/M0(-95.765,147.390)  MN(NMOS25)
+         X1/X7/X7/M0(-101.680,147.450)  MN(NMOS25)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 35    (_smn2v)                                                  ** missing injected instance **
+
+       Devices: 
+         X1/X7/X8/M0(-97.015,147.390)  MN(NMOS25)
+         X1/X7/X6/M0(-102.430,147.450)  MN(NMOS25)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 36    (_smp2v)                                                  ** missing injected instance **
+
+       Devices: 
+         X1/X11/X4/M0(74.055,120.870)  MP(PMOS25)
+         X1/X11/X3/M0(78.720,121.030)  MP(PMOS25)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 37    (_smp2v)                                                  ** missing injected instance **
+
+       Devices: 
+         X1/X11/X5/M0(73.305,120.870)  MP(PMOS25)
+         X1/X11/X2/M0(79.970,121.030)  MP(PMOS25)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 38    (_smn2v)                                                  ** missing injected instance **
+
+       Devices: 
+         X1/X11/X9/M0(73.055,124.045)  MN(NMOS25)
+         X1/X11/X7/M0(78.970,123.985)  MN(NMOS25)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 39    (_smn2v)                                                  ** missing injected instance **
+
+       Devices: 
+         X1/X11/X8/M0(74.305,124.045)  MN(NMOS25)
+         X1/X11/X6/M0(79.720,123.985)  MN(NMOS25)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 40    (_invv)                                                   ** missing injected instance **
+
+       Devices: 
+         X1/X7/X1/X0/M0(-91.400,150.365)  MP(PMOS25)
+         X1/X7/X1/X1/M0(-91.400,147.770)  MN(NMOS25)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 41    (_invv)                                                   ** missing injected instance **
+
+       Devices: 
+         X1/X11/X1/X0/M0(68.690,121.070)  MP(PMOS25)
+         X1/X11/X1/X1/M0(68.690,123.665)  MN(NMOS25)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 42    (_invv)                                                   ** missing injected instance **
+
+       Devices: 
+         X1/X7/X0/X0/M0(-107.560,150.365)  MP(PMOS25)
+         X1/X7/X0/X1/M0(-107.560,147.770)  MN(NMOS25)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 43    (_invv)                                                   ** missing injected instance **
+
+       Devices: 
+         X1/X11/X0/X0/M0(84.850,121.070)  MP(PMOS25)
+         X1/X11/X0/X1/M0(84.850,123.665)  MN(NMOS25)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 44    ** missing instance **                                    XKey_Generation_1/VPassThru1  V
+
+--------------------------------------------------------------------------------------------------------------
+
+ 45    ** missing instance **                                    XKey_Generation_1/VPassThru2  V
+
+--------------------------------------------------------------------------------------------------------------
+
+ 46    ** missing instance **                                    XKey_Generation_1/VPassThru3  V
+
+--------------------------------------------------------------------------------------------------------------
+
+ 47    ** missing instance **                                    XKey_Generation_1/VPassThru4  V
+
+--------------------------------------------------------------------------------------------------------------
+
+ 48    ** missing instance **                                    XKey_Generation_1/VPassThru5  V
+
+--------------------------------------------------------------------------------------------------------------
+
+ 49    ** missing instance **                                    XKey_Generation_1/VPassThru6  V
+
+--------------------------------------------------------------------------------------------------------------
+
+ 50    ** missing instance **                                    XKey_Generation_1/VPassThru7  V
+
+--------------------------------------------------------------------------------------------------------------
+
+ 51    ** missing instance **                                    XKey_Generation_1/VPassThru8  V
+
+--------------------------------------------------------------------------------------------------------------
+
+ 52    ** missing instance **                                    XKey_Generation_1/VPassThru9  V
+
+--------------------------------------------------------------------------------------------------------------
+
+ 53    ** missing instance **                                    XKey_Generation_1/VPassThru10  V
+
+--------------------------------------------------------------------------------------------------------------
+
+ 54    ** missing instance **                                    XKey_Generation_1/VPassThru11  V
+
+--------------------------------------------------------------------------------------------------------------
+
+ 55    ** missing instance **                                    XKey_Generation_1/VPassThru12  V
+
+--------------------------------------------------------------------------------------------------------------
+
+ 56    ** missing instance **                                    XKey_Generation_1/VPassThru13  V
+
+--------------------------------------------------------------------------------------------------------------
+
+ 57    ** missing instance **                                    XKey_Generation_1/VPassThru14  V
+
+--------------------------------------------------------------------------------------------------------------
+
+ 58    ** missing instance **                                    XKey_Generation_1/VPassThru15  V
+
+--------------------------------------------------------------------------------------------------------------
+
+ 59    ** missing instance **                                    XKey_Generation_1/VPassThru16  V
+
+--------------------------------------------------------------------------------------------------------------
+
+ 60    ** missing injected instance **                           (_xor2v)
+
+                                                                 Devices: 
+                                                                   XFeistel_2/XXOR_8/MMp2  MP(PMOS25)
+                                                                   XFeistel_2/XXOR_8/MMp1  MP(PMOS25)
+                                                                   XFeistel_2/XXOR_8/MMp4  MP(PMOS25)
+                                                                   XFeistel_2/XXOR_8/MMp3  MP(PMOS25)
+                                                                   XFeistel_2/XXOR_8/MMn4  MN(NMOS25)
+                                                                   XFeistel_2/XXOR_8/MMn1  MN(NMOS25)
+                                                                   XFeistel_2/XXOR_8/MMn3  MN(NMOS25)
+                                                                   XFeistel_2/XXOR_8/MMn2  MN(NMOS25)
+                                                                   XFeistel_2/XXOR_8/XINV_1/MMp1  MP(PMOS25)
+                                                                   XFeistel_2/XXOR_8/XINV_1/MMn1  MN(NMOS25)
+                                                                   XFeistel_2/XXOR_8/XINV_2/MMp1  MP(PMOS25)
+                                                                   XFeistel_2/XXOR_8/XINV_2/MMn1  MN(NMOS25)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 61    ** missing injected instance **                           (_xor2v)
+
+                                                                 Devices: 
+                                                                   XFeistel_2/XXOR_3/MMp2  MP(PMOS25)
+                                                                   XFeistel_2/XXOR_3/MMp1  MP(PMOS25)
+                                                                   XFeistel_2/XXOR_3/MMp4  MP(PMOS25)
+                                                                   XFeistel_2/XXOR_3/MMp3  MP(PMOS25)
+                                                                   XFeistel_2/XXOR_3/MMn4  MN(NMOS25)
+                                                                   XFeistel_2/XXOR_3/MMn1  MN(NMOS25)
+                                                                   XFeistel_2/XXOR_3/MMn3  MN(NMOS25)
+                                                                   XFeistel_2/XXOR_3/MMn2  MN(NMOS25)
+                                                                   XFeistel_2/XXOR_3/XINV_1/MMp1  MP(PMOS25)
+                                                                   XFeistel_2/XXOR_3/XINV_1/MMn1  MN(NMOS25)
+                                                                   XFeistel_2/XXOR_3/XINV_2/MMp1  MP(PMOS25)
+                                                                   XFeistel_2/XXOR_3/XINV_2/MMn1  MN(NMOS25)
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+                  Matched    Matched    Unmatched    Unmatched    Component
+                   Layout     Source       Layout       Source    Type
+                  -------    -------    ---------    ---------    ---------
+   Ports:              28         28            0            0
+
+   Nets:              309        309            3           15
+
+   Instances:           0          0            2            0    MP(PMOS25)
+                        0          0            0           16    V
+                      112        112            4            0    _invv
+                       64         64            0            0    _nand2v
+                       80         80            0            0    _nor2v
+                        8          8            0            0    _nor7v
+                        0          0            4            0    _smn2v
+                        0          0            3            0    _smp2v
+                       22         22            0            2    _xor2v
+                  -------    -------    ---------    ---------
+   Total Inst:        286        286           13           18
+
+
+o Initial Correspondence Points:
+
+   Ports:        Gnd plain_text6 plain_text3 plain_text7 plain_text4 Vdd cipher_text6
+                 cipher_text3 cipher_text7 cipher_text4 key<5> key<9> key<8> key<2> key<7>
+                 key<0> key<3> key<6> plain_text2 plain_text0 plain_text5 plain_text1 key<4>
+                 key<1> cipher_text2 cipher_text5 cipher_text1 cipher_text0
+
+
+**************************************************************************************************************
+                             DETAILED INSTANCE CONNECTIONS
+
+       LAYOUT NAME                                               SOURCE NAME
+**************************************************************************************************************
+
+          (This section contains detailed information about connections of
+           matched instances that are involved in net discrepancies).
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_xor2v)                                                  (_xor2v)
+         in1: plain_text7                                          in1: plain_text7
+         out: X0/76                                                out: XFeistel_1/S0_In<2>
+         sup1: Vdd                                                 sup1: Vdd
+         sup2: Gnd                                                 sup2: Gnd
+         in2: key<8>                                               ** key<8> **
+         ** no similar net **                                      in2: N_5
+
+       Devices: 
+         X0/X3/X2/M0(-357.440,97.905)  MP(PMOS25)                  XFeistel_1/XXOR_7/MMp2  MP(PMOS25) 
+         X0/X3/X5/M0(-350.775,98.065)  MP(PMOS25)                  XFeistel_1/XXOR_7/MMp1  MP(PMOS25) 
+         X0/X3/X3/M0(-356.190,97.905)  MP(PMOS25)                  XFeistel_1/XXOR_7/MMp4  MP(PMOS25) 
+         X0/X3/X4/M0(-351.525,98.065)  MP(PMOS25)                  XFeistel_1/XXOR_7/MMp3  MP(PMOS25) 
+         X0/X3/X6/M0(-357.190,94.950)  MN(NMOS25)                  XFeistel_1/XXOR_7/MMn4  MN(NMOS25) 
+         X0/X3/X8/M0(-351.775,94.890)  MN(NMOS25)                  XFeistel_1/XXOR_7/MMn1  MN(NMOS25) 
+         X0/X3/X7/M0(-356.440,94.950)  MN(NMOS25)                  XFeistel_1/XXOR_7/MMn3  MN(NMOS25) 
+         X0/X3/X9/M0(-350.525,94.890)  MN(NMOS25)                  XFeistel_1/XXOR_7/MMn2  MN(NMOS25) 
+         X0/X3/X0/X0/M0(-362.320,97.865)  MP(PMOS25)               XFeistel_1/XXOR_7/XINV_1/MMp1  MP(PMOS25) 
+         X0/X3/X0/X1/M0(-362.320,95.270)  MN(NMOS25)               XFeistel_1/XXOR_7/XINV_1/MMn1  MN(NMOS25) 
+         X0/X3/X1/X0/M0(-346.160,97.865)  MP(PMOS25)               XFeistel_1/XXOR_7/XINV_2/MMp1  MP(PMOS25) 
+         X0/X3/X1/X1/M0(-346.160,95.270)  MN(NMOS25)               XFeistel_1/XXOR_7/XINV_2/MMn1  MN(NMOS25) 
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_xor2v)                                                  (_xor2v)
+         in1: plain_text6                                          in1: plain_text6
+         out: 60                                                   out: XFeistel_1/S0_In<0>
+         sup1: Vdd                                                 sup1: Vdd
+         sup2: Gnd                                                 sup2: Gnd
+         in2: key<0>                                               ** key<0> **
+         ** no similar net **                                      in2: N_1
+
+       Devices: 
+         X0/X6/X2/M0(-351.905,159.465)  MP(PMOS25)                 XFeistel_1/XXOR_4/MMp2  MP(PMOS25) 
+         X0/X6/X5/M0(-345.240,159.625)  MP(PMOS25)                 XFeistel_1/XXOR_4/MMp1  MP(PMOS25) 
+         X0/X6/X3/M0(-350.655,159.465)  MP(PMOS25)                 XFeistel_1/XXOR_4/MMp4  MP(PMOS25) 
+         X0/X6/X4/M0(-345.990,159.625)  MP(PMOS25)                 XFeistel_1/XXOR_4/MMp3  MP(PMOS25) 
+         X0/X6/X6/M0(-351.655,156.510)  MN(NMOS25)                 XFeistel_1/XXOR_4/MMn4  MN(NMOS25) 
+         X0/X6/X8/M0(-346.240,156.450)  MN(NMOS25)                 XFeistel_1/XXOR_4/MMn1  MN(NMOS25) 
+         X0/X6/X7/M0(-350.905,156.510)  MN(NMOS25)                 XFeistel_1/XXOR_4/MMn3  MN(NMOS25) 
+         X0/X6/X9/M0(-344.990,156.450)  MN(NMOS25)                 XFeistel_1/XXOR_4/MMn2  MN(NMOS25) 
+         X0/X6/X0/X0/M0(-356.785,159.425)  MP(PMOS25)              XFeistel_1/XXOR_4/XINV_1/MMp1  MP(PMOS25) 
+         X0/X6/X0/X1/M0(-356.785,156.830)  MN(NMOS25)              XFeistel_1/XXOR_4/XINV_1/MMn1  MN(NMOS25) 
+         X0/X6/X1/X0/M0(-340.625,159.425)  MP(PMOS25)              XFeistel_1/XXOR_4/XINV_2/MMp1  MP(PMOS25) 
+         X0/X6/X1/X1/M0(-340.625,156.830)  MN(NMOS25)              XFeistel_1/XXOR_4/XINV_2/MMn1  MN(NMOS25) 
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_xor2v)                                                  (_xor2v)
+         in2: cipher_text7                                         in1: cipher_text7
+         out: X1/76                                                out: XFeistel_2/S0_In<2>
+         sup1: Vdd                                                 sup1: Vdd
+         sup2: Gnd                                                 sup2: Gnd
+         in1: key<5>                                               ** key<5> **
+         ** no similar net **                                      in2: N_6
+
+       Devices: 
+         X1/X3/X2/M0(-108.265,97.905)  MP(PMOS25)                  XFeistel_2/XXOR_7/MMp2  MP(PMOS25) 
+         X1/X3/X5/M0(-101.600,98.065)  MP(PMOS25)                  XFeistel_2/XXOR_7/MMp1  MP(PMOS25) 
+         X1/X3/X3/M0(-107.015,97.905)  MP(PMOS25)                  XFeistel_2/XXOR_7/MMp4  MP(PMOS25) 
+         X1/X3/X4/M0(-102.350,98.065)  MP(PMOS25)                  XFeistel_2/XXOR_7/MMp3  MP(PMOS25) 
+         X1/X3/X6/M0(-108.015,94.950)  MN(NMOS25)                  XFeistel_2/XXOR_7/MMn4  MN(NMOS25) 
+         X1/X3/X8/M0(-102.600,94.890)  MN(NMOS25)                  XFeistel_2/XXOR_7/MMn1  MN(NMOS25) 
+         X1/X3/X7/M0(-107.265,94.950)  MN(NMOS25)                  XFeistel_2/XXOR_7/MMn3  MN(NMOS25) 
+         X1/X3/X9/M0(-101.350,94.890)  MN(NMOS25)                  XFeistel_2/XXOR_7/MMn2  MN(NMOS25) 
+         X1/X3/X0/X0/M0(-113.145,97.865)  MP(PMOS25)               XFeistel_2/XXOR_7/XINV_1/MMp1  MP(PMOS25) 
+         X1/X3/X0/X1/M0(-113.145,95.270)  MN(NMOS25)               XFeistel_2/XXOR_7/XINV_1/MMn1  MN(NMOS25) 
+         X1/X3/X1/X0/M0(-96.985,97.865)  MP(PMOS25)                XFeistel_2/XXOR_7/XINV_2/MMp1  MP(PMOS25) 
+         X1/X3/X1/X1/M0(-96.985,95.270)  MN(NMOS25)                XFeistel_2/XXOR_7/XINV_2/MMn1  MN(NMOS25) 
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_xor2v)                                                  (_xor2v)
+         in1: plain_text4                                          in1: plain_text4
+         out: X0/75                                                out: XFeistel_1/S0_In<3>
+         sup1: Vdd                                                 sup1: Vdd
+         sup2: Gnd                                                 sup2: Gnd
+         in2: key<3>                                               ** key<3> **
+         ** no similar net **                                      in2: N_7
+
+       Devices: 
+         X0/X2/X2/M0(-357.780,83.960)  MP(PMOS25)                  XFeistel_1/XXOR_10/MMp2  MP(PMOS25) 
+         X0/X2/X5/M0(-351.115,84.120)  MP(PMOS25)                  XFeistel_1/XXOR_10/MMp1  MP(PMOS25) 
+         X0/X2/X3/M0(-356.530,83.960)  MP(PMOS25)                  XFeistel_1/XXOR_10/MMp4  MP(PMOS25) 
+         X0/X2/X4/M0(-351.865,84.120)  MP(PMOS25)                  XFeistel_1/XXOR_10/MMp3  MP(PMOS25) 
+         X0/X2/X6/M0(-357.530,81.005)  MN(NMOS25)                  XFeistel_1/XXOR_10/MMn4  MN(NMOS25) 
+         X0/X2/X8/M0(-352.115,80.945)  MN(NMOS25)                  XFeistel_1/XXOR_10/MMn1  MN(NMOS25) 
+         X0/X2/X7/M0(-356.780,81.005)  MN(NMOS25)                  XFeistel_1/XXOR_10/MMn3  MN(NMOS25) 
+         X0/X2/X9/M0(-350.865,80.945)  MN(NMOS25)                  XFeistel_1/XXOR_10/MMn2  MN(NMOS25) 
+         X0/X2/X0/X0/M0(-362.660,83.920)  MP(PMOS25)               XFeistel_1/XXOR_10/XINV_1/MMp1  MP(PMOS25) 
+         X0/X2/X0/X1/M0(-362.660,81.325)  MN(NMOS25)               XFeistel_1/XXOR_10/XINV_1/MMn1  MN(NMOS25) 
+         X0/X2/X1/X0/M0(-346.500,83.920)  MP(PMOS25)               XFeistel_1/XXOR_10/XINV_2/MMp1  MP(PMOS25) 
+         X0/X2/X1/X1/M0(-346.500,81.325)  MN(NMOS25)               XFeistel_1/XXOR_10/XINV_2/MMn1  MN(NMOS25) 
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_xor2v)                                                  (_xor2v)
+         in2: cipher_text4                                         in1: cipher_text4
+         out: X1/75                                                out: XFeistel_2/S0_In<3>
+         sup1: Vdd                                                 sup1: Vdd
+         sup2: Gnd                                                 sup2: Gnd
+         in1: key<4>                                               ** key<4> **
+         ** no similar net **                                      in2: N_8
+
+       Devices: 
+         X1/X2/X2/M0(-108.605,83.960)  MP(PMOS25)                  XFeistel_2/XXOR_10/MMp2  MP(PMOS25) 
+         X1/X2/X5/M0(-101.940,84.120)  MP(PMOS25)                  XFeistel_2/XXOR_10/MMp1  MP(PMOS25) 
+         X1/X2/X3/M0(-107.355,83.960)  MP(PMOS25)                  XFeistel_2/XXOR_10/MMp4  MP(PMOS25) 
+         X1/X2/X4/M0(-102.690,84.120)  MP(PMOS25)                  XFeistel_2/XXOR_10/MMp3  MP(PMOS25) 
+         X1/X2/X6/M0(-108.355,81.005)  MN(NMOS25)                  XFeistel_2/XXOR_10/MMn4  MN(NMOS25) 
+         X1/X2/X8/M0(-102.940,80.945)  MN(NMOS25)                  XFeistel_2/XXOR_10/MMn1  MN(NMOS25) 
+         X1/X2/X7/M0(-107.605,81.005)  MN(NMOS25)                  XFeistel_2/XXOR_10/MMn3  MN(NMOS25) 
+         X1/X2/X9/M0(-101.690,80.945)  MN(NMOS25)                  XFeistel_2/XXOR_10/MMn2  MN(NMOS25) 
+         X1/X2/X0/X0/M0(-113.485,83.920)  MP(PMOS25)               XFeistel_2/XXOR_10/XINV_1/MMp1  MP(PMOS25) 
+         X1/X2/X0/X1/M0(-113.485,81.325)  MN(NMOS25)               XFeistel_2/XXOR_10/XINV_1/MMn1  MN(NMOS25) 
+         X1/X2/X1/X0/M0(-97.325,83.920)  MP(PMOS25)                XFeistel_2/XXOR_10/XINV_2/MMp1  MP(PMOS25) 
+         X1/X2/X1/X1/M0(-97.325,81.325)  MN(NMOS25)                XFeistel_2/XXOR_10/XINV_2/MMn1  MN(NMOS25) 
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_xor2v)                                                  (_xor2v)
+         in1: plain_text6                                          in1: plain_text6
+         out: X0/74                                                out: XFeistel_1/S1_In<2>
+         sup1: Vdd                                                 sup1: Vdd
+         sup2: Gnd                                                 sup2: Gnd
+         in2: key<9>                                               ** key<9> **
+         ** no similar net **                                      in2: N_13
+
+       Devices: 
+         X0/X1/X2/M0(-358.005,293.710)  MP(PMOS25)                 XFeistel_1/XXOR_2/MMp2  MP(PMOS25) 
+         X0/X1/X5/M0(-351.340,293.870)  MP(PMOS25)                 XFeistel_1/XXOR_2/MMp1  MP(PMOS25) 
+         X0/X1/X3/M0(-356.755,293.710)  MP(PMOS25)                 XFeistel_1/XXOR_2/MMp4  MP(PMOS25) 
+         X0/X1/X4/M0(-352.090,293.870)  MP(PMOS25)                 XFeistel_1/XXOR_2/MMp3  MP(PMOS25) 
+         X0/X1/X6/M0(-357.755,290.755)  MN(NMOS25)                 XFeistel_1/XXOR_2/MMn4  MN(NMOS25) 
+         X0/X1/X8/M0(-352.340,290.695)  MN(NMOS25)                 XFeistel_1/XXOR_2/MMn1  MN(NMOS25) 
+         X0/X1/X7/M0(-357.005,290.755)  MN(NMOS25)                 XFeistel_1/XXOR_2/MMn3  MN(NMOS25) 
+         X0/X1/X9/M0(-351.090,290.695)  MN(NMOS25)                 XFeistel_1/XXOR_2/MMn2  MN(NMOS25) 
+         X0/X1/X0/X0/M0(-362.885,293.670)  MP(PMOS25)              XFeistel_1/XXOR_2/XINV_1/MMp1  MP(PMOS25) 
+         X0/X1/X0/X1/M0(-362.885,291.075)  MN(NMOS25)              XFeistel_1/XXOR_2/XINV_1/MMn1  MN(NMOS25) 
+         X0/X1/X1/X0/M0(-346.725,293.670)  MP(PMOS25)              XFeistel_1/XXOR_2/XINV_2/MMp1  MP(PMOS25) 
+         X0/X1/X1/X1/M0(-346.725,291.075)  MN(NMOS25)              XFeistel_1/XXOR_2/XINV_2/MMn1  MN(NMOS25) 
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_xor2v)                                                  (_xor2v)
+         in1: plain_text4                                          in1: plain_text4
+         out: 10                                                   out: XFeistel_1/S1_In<1>
+         sup1: Vdd                                                 sup1: Vdd
+         sup2: Gnd                                                 sup2: Gnd
+         in2: key<2>                                               ** key<2> **
+         ** no similar net **                                      in2: N_11
+
+       Devices: 
+         X0/X4/X2/M0(-352.705,345.000)  MP(PMOS25)                 XFeistel_1/XXOR_5/MMp2  MP(PMOS25) 
+         X0/X4/X5/M0(-346.040,345.160)  MP(PMOS25)                 XFeistel_1/XXOR_5/MMp1  MP(PMOS25) 
+         X0/X4/X3/M0(-351.455,345.000)  MP(PMOS25)                 XFeistel_1/XXOR_5/MMp4  MP(PMOS25) 
+         X0/X4/X4/M0(-346.790,345.160)  MP(PMOS25)                 XFeistel_1/XXOR_5/MMp3  MP(PMOS25) 
+         X0/X4/X6/M0(-352.455,342.045)  MN(NMOS25)                 XFeistel_1/XXOR_5/MMn4  MN(NMOS25) 
+         X0/X4/X8/M0(-347.040,341.985)  MN(NMOS25)                 XFeistel_1/XXOR_5/MMn1  MN(NMOS25) 
+         X0/X4/X7/M0(-351.705,342.045)  MN(NMOS25)                 XFeistel_1/XXOR_5/MMn3  MN(NMOS25) 
+         X0/X4/X9/M0(-345.790,341.985)  MN(NMOS25)                 XFeistel_1/XXOR_5/MMn2  MN(NMOS25) 
+         X0/X4/X0/X0/M0(-357.585,344.960)  MP(PMOS25)              XFeistel_1/XXOR_5/XINV_1/MMp1  MP(PMOS25) 
+         X0/X4/X0/X1/M0(-357.585,342.365)  MN(NMOS25)              XFeistel_1/XXOR_5/XINV_1/MMn1  MN(NMOS25) 
+         X0/X4/X1/X0/M0(-341.425,344.960)  MP(PMOS25)              XFeistel_1/XXOR_5/XINV_2/MMp1  MP(PMOS25) 
+         X0/X4/X1/X1/M0(-341.425,342.365)  MN(NMOS25)              XFeistel_1/XXOR_5/XINV_2/MMn1  MN(NMOS25) 
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_xor2v)                                                  (_xor2v)
+         in1: plain_text3                                          in1: plain_text3
+         out: 9                                                    out: XFeistel_1/S0_In<1>
+         sup1: Vdd                                                 sup1: Vdd
+         sup2: Gnd                                                 sup2: Gnd
+         in2: key<6>                                               ** key<6> **
+         ** no similar net **                                      in2: N_3
+
+       Devices: 
+         X0/X7/X2/M0(-351.855,150.405)  MP(PMOS25)                 XFeistel_1/XXOR_3/MMp2  MP(PMOS25) 
+         X0/X7/X5/M0(-345.190,150.565)  MP(PMOS25)                 XFeistel_1/XXOR_3/MMp1  MP(PMOS25) 
+         X0/X7/X3/M0(-350.605,150.405)  MP(PMOS25)                 XFeistel_1/XXOR_3/MMp4  MP(PMOS25) 
+         X0/X7/X4/M0(-345.940,150.565)  MP(PMOS25)                 XFeistel_1/XXOR_3/MMp3  MP(PMOS25) 
+         X0/X7/X6/M0(-351.605,147.450)  MN(NMOS25)                 XFeistel_1/XXOR_3/MMn4  MN(NMOS25) 
+         X0/X7/X8/M0(-346.190,147.390)  MN(NMOS25)                 XFeistel_1/XXOR_3/MMn1  MN(NMOS25) 
+         X0/X7/X7/M0(-350.855,147.450)  MN(NMOS25)                 XFeistel_1/XXOR_3/MMn3  MN(NMOS25) 
+         X0/X7/X9/M0(-344.940,147.390)  MN(NMOS25)                 XFeistel_1/XXOR_3/MMn2  MN(NMOS25) 
+         X0/X7/X0/X0/M0(-356.735,150.365)  MP(PMOS25)              XFeistel_1/XXOR_3/XINV_1/MMp1  MP(PMOS25) 
+         X0/X7/X0/X1/M0(-356.735,147.770)  MN(NMOS25)              XFeistel_1/XXOR_3/XINV_1/MMn1  MN(NMOS25) 
+         X0/X7/X1/X0/M0(-340.575,150.365)  MP(PMOS25)              XFeistel_1/XXOR_3/XINV_2/MMp1  MP(PMOS25) 
+         X0/X7/X1/X1/M0(-340.575,147.770)  MN(NMOS25)              XFeistel_1/XXOR_3/XINV_2/MMn1  MN(NMOS25) 
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_xor2v)                                                  (_xor2v)
+         in2: cipher_text4                                         in1: cipher_text4
+         out: 26                                                   out: XFeistel_2/S1_In<1>
+         sup1: Vdd                                                 sup1: Vdd
+         sup2: Gnd                                                 sup2: Gnd
+         in1: key<1>                                               ** key<1> **
+         ** no similar net **                                      in2: N_12
+
+       Devices: 
+         X1/X4/X2/M0(-103.530,345.000)  MP(PMOS25)                 XFeistel_2/XXOR_5/MMp2  MP(PMOS25) 
+         X1/X4/X5/M0(-96.865,345.160)  MP(PMOS25)                  XFeistel_2/XXOR_5/MMp1  MP(PMOS25) 
+         X1/X4/X3/M0(-102.280,345.000)  MP(PMOS25)                 XFeistel_2/XXOR_5/MMp4  MP(PMOS25) 
+         X1/X4/X4/M0(-97.615,345.160)  MP(PMOS25)                  XFeistel_2/XXOR_5/MMp3  MP(PMOS25) 
+         X1/X4/X6/M0(-103.280,342.045)  MN(NMOS25)                 XFeistel_2/XXOR_5/MMn4  MN(NMOS25) 
+         X1/X4/X8/M0(-97.865,341.985)  MN(NMOS25)                  XFeistel_2/XXOR_5/MMn1  MN(NMOS25) 
+         X1/X4/X7/M0(-102.530,342.045)  MN(NMOS25)                 XFeistel_2/XXOR_5/MMn3  MN(NMOS25) 
+         X1/X4/X9/M0(-96.615,341.985)  MN(NMOS25)                  XFeistel_2/XXOR_5/MMn2  MN(NMOS25) 
+         X1/X4/X0/X0/M0(-108.410,344.960)  MP(PMOS25)              XFeistel_2/XXOR_5/XINV_1/MMp1  MP(PMOS25) 
+         X1/X4/X0/X1/M0(-108.410,342.365)  MN(NMOS25)              XFeistel_2/XXOR_5/XINV_1/MMn1  MN(NMOS25) 
+         X1/X4/X1/X0/M0(-92.250,344.960)  MP(PMOS25)               XFeistel_2/XXOR_5/XINV_2/MMp1  MP(PMOS25) 
+         X1/X4/X1/X1/M0(-92.250,342.365)  MN(NMOS25)               XFeistel_2/XXOR_5/XINV_2/MMn1  MN(NMOS25) 
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_xor2v)                                                  (_xor2v)
+         in2: cipher_text6                                         in1: cipher_text6
+         out: X1/74                                                out: XFeistel_2/S1_In<2>
+         sup1: Vdd                                                 sup1: Vdd
+         sup2: Gnd                                                 sup2: Gnd
+         in1: key<0>                                               ** key<0> **
+         ** no similar net **                                      in2: N_14
+
+       Devices: 
+         X1/X1/X2/M0(-108.830,293.710)  MP(PMOS25)                 XFeistel_2/XXOR_2/MMp2  MP(PMOS25) 
+         X1/X1/X5/M0(-102.165,293.870)  MP(PMOS25)                 XFeistel_2/XXOR_2/MMp1  MP(PMOS25) 
+         X1/X1/X3/M0(-107.580,293.710)  MP(PMOS25)                 XFeistel_2/XXOR_2/MMp4  MP(PMOS25) 
+         X1/X1/X4/M0(-102.915,293.870)  MP(PMOS25)                 XFeistel_2/XXOR_2/MMp3  MP(PMOS25) 
+         X1/X1/X6/M0(-108.580,290.755)  MN(NMOS25)                 XFeistel_2/XXOR_2/MMn4  MN(NMOS25) 
+         X1/X1/X8/M0(-103.165,290.695)  MN(NMOS25)                 XFeistel_2/XXOR_2/MMn1  MN(NMOS25) 
+         X1/X1/X7/M0(-107.830,290.755)  MN(NMOS25)                 XFeistel_2/XXOR_2/MMn3  MN(NMOS25) 
+         X1/X1/X9/M0(-101.915,290.695)  MN(NMOS25)                 XFeistel_2/XXOR_2/MMn2  MN(NMOS25) 
+         X1/X1/X0/X0/M0(-113.710,293.670)  MP(PMOS25)              XFeistel_2/XXOR_2/XINV_1/MMp1  MP(PMOS25) 
+         X1/X1/X0/X1/M0(-113.710,291.075)  MN(NMOS25)              XFeistel_2/XXOR_2/XINV_1/MMn1  MN(NMOS25) 
+         X1/X1/X1/X0/M0(-97.550,293.670)  MP(PMOS25)               XFeistel_2/XXOR_2/XINV_2/MMp1  MP(PMOS25) 
+         X1/X1/X1/X1/M0(-97.550,291.075)  MN(NMOS25)               XFeistel_2/XXOR_2/XINV_2/MMn1  MN(NMOS25) 
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_xor2v)                                                  (_xor2v)
+         in1: plain_text7                                          in1: plain_text7
+         out: 61                                                   out: XFeistel_1/S1_In<0>
+         sup1: Vdd                                                 sup1: Vdd
+         sup2: Gnd                                                 sup2: Gnd
+         in2: key<7>                                               ** key<7> **
+         ** no similar net **                                      in2: N_9
+
+       Devices: 
+         X0/X5/X2/M0(-352.530,355.460)  MP(PMOS25)                 XFeistel_1/XXOR_6/MMp2  MP(PMOS25) 
+         X0/X5/X5/M0(-345.865,355.620)  MP(PMOS25)                 XFeistel_1/XXOR_6/MMp1  MP(PMOS25) 
+         X0/X5/X3/M0(-351.280,355.460)  MP(PMOS25)                 XFeistel_1/XXOR_6/MMp4  MP(PMOS25) 
+         X0/X5/X4/M0(-346.615,355.620)  MP(PMOS25)                 XFeistel_1/XXOR_6/MMp3  MP(PMOS25) 
+         X0/X5/X6/M0(-352.280,352.505)  MN(NMOS25)                 XFeistel_1/XXOR_6/MMn4  MN(NMOS25) 
+         X0/X5/X8/M0(-346.865,352.445)  MN(NMOS25)                 XFeistel_1/XXOR_6/MMn1  MN(NMOS25) 
+         X0/X5/X7/M0(-351.530,352.505)  MN(NMOS25)                 XFeistel_1/XXOR_6/MMn3  MN(NMOS25) 
+         X0/X5/X9/M0(-345.615,352.445)  MN(NMOS25)                 XFeistel_1/XXOR_6/MMn2  MN(NMOS25) 
+         X0/X5/X0/X0/M0(-357.410,355.420)  MP(PMOS25)              XFeistel_1/XXOR_6/XINV_1/MMp1  MP(PMOS25) 
+         X0/X5/X0/X1/M0(-357.410,352.825)  MN(NMOS25)              XFeistel_1/XXOR_6/XINV_1/MMn1  MN(NMOS25) 
+         X0/X5/X1/X0/M0(-341.250,355.420)  MP(PMOS25)              XFeistel_1/XXOR_6/XINV_2/MMp1  MP(PMOS25) 
+         X0/X5/X1/X1/M0(-341.250,352.825)  MN(NMOS25)              XFeistel_1/XXOR_6/XINV_2/MMn1  MN(NMOS25) 
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_xor2v)                                                  (_xor2v)
+         in1: plain_text3                                          in1: plain_text3
+         out: X0/73                                                out: XFeistel_1/S1_In<3>
+         sup1: Vdd                                                 sup1: Vdd
+         sup2: Gnd                                                 sup2: Gnd
+         in2: key<5>                                               ** key<5> **
+         ** no similar net **                                      in2: N_15
+
+       Devices: 
+         X0/X0/X2/M0(-358.060,279.305)  MP(PMOS25)                 XFeistel_1/XXOR_1/MMp2  MP(PMOS25) 
+         X0/X0/X5/M0(-351.395,279.465)  MP(PMOS25)                 XFeistel_1/XXOR_1/MMp1  MP(PMOS25) 
+         X0/X0/X3/M0(-356.810,279.305)  MP(PMOS25)                 XFeistel_1/XXOR_1/MMp4  MP(PMOS25) 
+         X0/X0/X4/M0(-352.145,279.465)  MP(PMOS25)                 XFeistel_1/XXOR_1/MMp3  MP(PMOS25) 
+         X0/X0/X6/M0(-357.810,276.350)  MN(NMOS25)                 XFeistel_1/XXOR_1/MMn4  MN(NMOS25) 
+         X0/X0/X8/M0(-352.395,276.290)  MN(NMOS25)                 XFeistel_1/XXOR_1/MMn1  MN(NMOS25) 
+         X0/X0/X7/M0(-357.060,276.350)  MN(NMOS25)                 XFeistel_1/XXOR_1/MMn3  MN(NMOS25) 
+         X0/X0/X9/M0(-351.145,276.290)  MN(NMOS25)                 XFeistel_1/XXOR_1/MMn2  MN(NMOS25) 
+         X0/X0/X0/X0/M0(-362.940,279.265)  MP(PMOS25)              XFeistel_1/XXOR_1/XINV_1/MMp1  MP(PMOS25) 
+         X0/X0/X0/X1/M0(-362.940,276.670)  MN(NMOS25)              XFeistel_1/XXOR_1/XINV_1/MMn1  MN(NMOS25) 
+         X0/X0/X1/X0/M0(-346.780,279.265)  MP(PMOS25)              XFeistel_1/XXOR_1/XINV_2/MMp1  MP(PMOS25) 
+         X0/X0/X1/X1/M0(-346.780,276.670)  MN(NMOS25)              XFeistel_1/XXOR_1/XINV_2/MMn1  MN(NMOS25) 
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_xor2v)                                                  (_xor2v)
+         in1: X0/64                                                in2: XFeistel_1/S0_Out<1>
+         in2: plain_text1                                          in1: plain_text1
+         sup1: Vdd                                                 sup1: Vdd
+         sup2: Gnd                                                 sup2: Gnd
+         out: cipher_text4                                         ** cipher_text4 **
+         ** cipher_text3 **                                        out: cipher_text3
+
+       Devices: 
+         X0/X10/X2/M0(-169.845,68.975)  MP(PMOS25)                 XFeistel_1/XXOR_12/MMp2  MP(PMOS25) 
+         X0/X10/X5/M0(-176.510,69.135)  MP(PMOS25)                 XFeistel_1/XXOR_12/MMp1  MP(PMOS25) 
+         X0/X10/X3/M0(-171.095,68.975)  MP(PMOS25)                 XFeistel_1/XXOR_12/MMp4  MP(PMOS25) 
+         X0/X10/X4/M0(-175.760,69.135)  MP(PMOS25)                 XFeistel_1/XXOR_12/MMp3  MP(PMOS25) 
+         X0/X10/X6/M0(-170.095,66.020)  MN(NMOS25)                 XFeistel_1/XXOR_12/MMn4  MN(NMOS25) 
+         X0/X10/X8/M0(-175.510,65.960)  MN(NMOS25)                 XFeistel_1/XXOR_12/MMn1  MN(NMOS25) 
+         X0/X10/X7/M0(-170.845,66.020)  MN(NMOS25)                 XFeistel_1/XXOR_12/MMn3  MN(NMOS25) 
+         X0/X10/X9/M0(-176.760,65.960)  MN(NMOS25)                 XFeistel_1/XXOR_12/MMn2  MN(NMOS25) 
+         X0/X10/X0/X0/M0(-164.965,68.935)  MP(PMOS25)              XFeistel_1/XXOR_12/XINV_1/MMp1  MP(PMOS25) 
+         X0/X10/X0/X1/M0(-164.965,66.340)  MN(NMOS25)              XFeistel_1/XXOR_12/XINV_1/MMn1  MN(NMOS25) 
+         X0/X10/X1/X0/M0(-181.125,68.935)  MP(PMOS25)              XFeistel_1/XXOR_12/XINV_2/MMp1  MP(PMOS25) 
+         X0/X10/X1/X1/M0(-181.125,66.340)  MN(NMOS25)              XFeistel_1/XXOR_12/XINV_2/MMn1  MN(NMOS25) 
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_xor2v)                                                  (_xor2v)
+         in1: plain_text2                                          in1: plain_text2
+         in2: X0/62                                                in2: XFeistel_1/S1_Out<0>
+         sup1: Vdd                                                 sup1: Vdd
+         sup2: Gnd                                                 sup2: Gnd
+         out: cipher_text3                                         ** cipher_text3 **
+         ** cipher_text4 **                                        out: cipher_text4
+
+       Devices: 
+         X0/X8/X2/M0(-171.840,316.215)  MP(PMOS25)                 XFeistel_1/XXOR_9/MMp2  MP(PMOS25) 
+         X0/X8/X5/M0(-178.505,316.055)  MP(PMOS25)                 XFeistel_1/XXOR_9/MMp1  MP(PMOS25) 
+         X0/X8/X3/M0(-173.090,316.215)  MP(PMOS25)                 XFeistel_1/XXOR_9/MMp4  MP(PMOS25) 
+         X0/X8/X4/M0(-177.755,316.055)  MP(PMOS25)                 XFeistel_1/XXOR_9/MMp3  MP(PMOS25) 
+         X0/X8/X6/M0(-172.090,319.170)  MN(NMOS25)                 XFeistel_1/XXOR_9/MMn4  MN(NMOS25) 
+         X0/X8/X8/M0(-177.505,319.230)  MN(NMOS25)                 XFeistel_1/XXOR_9/MMn1  MN(NMOS25) 
+         X0/X8/X7/M0(-172.840,319.170)  MN(NMOS25)                 XFeistel_1/XXOR_9/MMn3  MN(NMOS25) 
+         X0/X8/X9/M0(-178.755,319.230)  MN(NMOS25)                 XFeistel_1/XXOR_9/MMn2  MN(NMOS25) 
+         X0/X8/X0/X0/M0(-166.960,316.255)  MP(PMOS25)              XFeistel_1/XXOR_9/XINV_1/MMp1  MP(PMOS25) 
+         X0/X8/X0/X1/M0(-166.960,318.850)  MN(NMOS25)              XFeistel_1/XXOR_9/XINV_1/MMn1  MN(NMOS25) 
+         X0/X8/X1/X0/M0(-183.120,316.255)  MP(PMOS25)              XFeistel_1/XXOR_9/XINV_2/MMp1  MP(PMOS25) 
+         X0/X8/X1/X1/M0(-183.120,318.850)  MN(NMOS25)              XFeistel_1/XXOR_9/XINV_2/MMn1  MN(NMOS25) 
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_xor2v)                                                  (_xor2v)
+         in2: cipher_text6                                         in1: cipher_text6
+         out: 62                                                   out: XFeistel_2/S0_In<0>
+         sup1: Vdd                                                 sup1: Vdd
+         sup2: Gnd                                                 sup2: Gnd
+         in1: key<7>                                               ** key<7> **
+         ** no similar net **                                      in2: N_2
+
+       Devices: 
+         X1/X6/X2/M0(-102.730,159.465)  MP(PMOS25)                 XFeistel_2/XXOR_4/MMp2  MP(PMOS25) 
+         X1/X6/X5/M0(-96.065,159.625)  MP(PMOS25)                  XFeistel_2/XXOR_4/MMp1  MP(PMOS25) 
+         X1/X6/X3/M0(-101.480,159.465)  MP(PMOS25)                 XFeistel_2/XXOR_4/MMp4  MP(PMOS25) 
+         X1/X6/X4/M0(-96.815,159.625)  MP(PMOS25)                  XFeistel_2/XXOR_4/MMp3  MP(PMOS25) 
+         X1/X6/X6/M0(-102.480,156.510)  MN(NMOS25)                 XFeistel_2/XXOR_4/MMn4  MN(NMOS25) 
+         X1/X6/X8/M0(-97.065,156.450)  MN(NMOS25)                  XFeistel_2/XXOR_4/MMn1  MN(NMOS25) 
+         X1/X6/X7/M0(-101.730,156.510)  MN(NMOS25)                 XFeistel_2/XXOR_4/MMn3  MN(NMOS25) 
+         X1/X6/X9/M0(-95.815,156.450)  MN(NMOS25)                  XFeistel_2/XXOR_4/MMn2  MN(NMOS25) 
+         X1/X6/X0/X0/M0(-107.610,159.425)  MP(PMOS25)              XFeistel_2/XXOR_4/XINV_1/MMp1  MP(PMOS25) 
+         X1/X6/X0/X1/M0(-107.610,156.830)  MN(NMOS25)              XFeistel_2/XXOR_4/XINV_1/MMn1  MN(NMOS25) 
+         X1/X6/X1/X0/M0(-91.450,159.425)  MP(PMOS25)               XFeistel_2/XXOR_4/XINV_2/MMp1  MP(PMOS25) 
+         X1/X6/X1/X1/M0(-91.450,156.830)  MN(NMOS25)               XFeistel_2/XXOR_4/XINV_2/MMn1  MN(NMOS25) 
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_xor2v)                                                  (_xor2v)
+         in2: cipher_text7                                         in1: cipher_text7
+         out: 63                                                   out: XFeistel_2/S1_In<0>
+         sup1: Vdd                                                 sup1: Vdd
+         sup2: Gnd                                                 sup2: Gnd
+         in1: key<9>                                               ** key<9> **
+         ** no similar net **                                      in2: N_10
+
+       Devices: 
+         X1/X5/X2/M0(-103.355,355.460)  MP(PMOS25)                 XFeistel_2/XXOR_6/MMp2  MP(PMOS25) 
+         X1/X5/X5/M0(-96.690,355.620)  MP(PMOS25)                  XFeistel_2/XXOR_6/MMp1  MP(PMOS25) 
+         X1/X5/X3/M0(-102.105,355.460)  MP(PMOS25)                 XFeistel_2/XXOR_6/MMp4  MP(PMOS25) 
+         X1/X5/X4/M0(-97.440,355.620)  MP(PMOS25)                  XFeistel_2/XXOR_6/MMp3  MP(PMOS25) 
+         X1/X5/X6/M0(-103.105,352.505)  MN(NMOS25)                 XFeistel_2/XXOR_6/MMn4  MN(NMOS25) 
+         X1/X5/X8/M0(-97.690,352.445)  MN(NMOS25)                  XFeistel_2/XXOR_6/MMn1  MN(NMOS25) 
+         X1/X5/X7/M0(-102.355,352.505)  MN(NMOS25)                 XFeistel_2/XXOR_6/MMn3  MN(NMOS25) 
+         X1/X5/X9/M0(-96.440,352.445)  MN(NMOS25)                  XFeistel_2/XXOR_6/MMn2  MN(NMOS25) 
+         X1/X5/X0/X0/M0(-108.235,355.420)  MP(PMOS25)              XFeistel_2/XXOR_6/XINV_1/MMp1  MP(PMOS25) 
+         X1/X5/X0/X1/M0(-108.235,352.825)  MN(NMOS25)              XFeistel_2/XXOR_6/XINV_1/MMn1  MN(NMOS25) 
+         X1/X5/X1/X0/M0(-92.075,355.420)  MP(PMOS25)               XFeistel_2/XXOR_6/XINV_2/MMp1  MP(PMOS25) 
+         X1/X5/X1/X1/M0(-92.075,352.825)  MN(NMOS25)               XFeistel_2/XXOR_6/XINV_2/MMn1  MN(NMOS25) 
+
+
+**************************************************************************************************************
+                                         SUMMARY
+**************************************************************************************************************
+
+Total CPU Time:      0 sec
+Total Elapsed Time:  0 sec

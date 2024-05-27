@@ -1,0 +1,28 @@
+//
+//  Rule file generated on Sat Apr 20 16:33:37 2024
+//  by Calibre Interactive v2023.4_17.10    Mon Oct 2 13:57:41 PDT 2023
+//
+//      *** PLEASE DO NOT MODIFY THIS FILE ***
+//
+//
+
+LAYOUT PATH "Inverter.calibre.db"
+LAYOUT SYSTEM GDSII
+LAYOUT PRIMARY "Inverter"
+
+SOURCE PATH "Inverter.src.net"
+SOURCE SYSTEM SPICE
+SOURCE PRIMARY "Inverter"
+
+MASK SVDB DIRECTORY "svdb" QUERY
+
+LVS REPORT "Inverter.lvs.report"
+
+LVS EXECUTE ERC YES
+
+ERC RESULTS DATABASE "Inverter.erc.results"
+ERC CELL NAME YES CELL SPACE XFORM
+
+DRC ICSTATION YES
+
+INCLUDE "/home/vlsi/Desktop/CND_Advanced_Full_Custom/TannerTools_v2022.2/Process/Generic_250nm/Rules/Calibre/Generic_250nm_LVS.cal"

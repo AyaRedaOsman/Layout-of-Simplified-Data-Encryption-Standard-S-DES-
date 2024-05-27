@@ -1,0 +1,28 @@
+//
+//  Rule file generated on Sat Apr 20 20:29:04 2024
+//  by Calibre Interactive v2023.4_17.10    Mon Oct 2 13:57:41 PDT 2023
+//
+//      *** PLEASE DO NOT MODIFY THIS FILE ***
+//
+//
+
+LAYOUT PATH "XOR.calibre.db"
+LAYOUT SYSTEM GDSII
+LAYOUT PRIMARY "XOR"
+
+SOURCE PATH "XOR.src.net"
+SOURCE SYSTEM SPICE
+SOURCE PRIMARY "XOR"
+
+MASK SVDB DIRECTORY "svdb" QUERY
+
+LVS REPORT "XOR.lvs.report"
+
+LVS EXECUTE ERC YES
+
+ERC RESULTS DATABASE "XOR.erc.results"
+ERC CELL NAME YES CELL SPACE XFORM
+
+DRC ICSTATION YES
+
+INCLUDE "/home/vlsi/Midterm_HHAF/___Generic_250nm_LVS.cal___"

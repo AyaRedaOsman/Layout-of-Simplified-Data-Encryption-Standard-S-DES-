@@ -1,0 +1,24 @@
+//
+//  Rule file generated on Sat May 18 20:35:38 2024
+//  by Calibre Interactive v2024.1_15.11    Mon Jan 8 15:16:15 PST 2024
+//
+//      *** PLEASE DO NOT MODIFY THIS FILE ***
+//
+//
+
+LAYOUT PATH "DES.calibre.db"
+LAYOUT SYSTEM GDSII
+LAYOUT PRIMARY "DES"
+
+DRC RESULTS DATABASE "DES.drc.results" ASCII
+DRC CELL NAME YES CELL SPACE XFORM
+
+DRC SUMMARY REPORT "DES.drc.summary" REPLACE HIER
+
+DRC MAXIMUM RESULTS 1000
+
+DRC MAXIMUM VERTEX 4096
+
+DRC ICSTATION YES
+
+INCLUDE "/home/vlsi/Desktop/TannerTools_v2022.2/Process/Generic_250nm/Rules/Calibre/Generic_250nm_DRC.cal"

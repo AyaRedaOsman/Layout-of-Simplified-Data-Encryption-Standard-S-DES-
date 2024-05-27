@@ -1,0 +1,63 @@
+* SPICE export by:      S-Edit 2022.2.3
+* Export time:          Fri May 10 19:08:04 2024
+* Design path:          /home/vlsi/FinalHHAF/lib.defs
+* Library:              FinalHHAF
+* Cell:                 OR
+* Testbench:            Spice
+* View:                 schematic
+* Export as:            subcircuit definition
+* Export mode:          hierarchical
+* Exclude empty:        no
+* Exclude .model:       no
+* Exclude .hdl:         no
+* Exclude .end:         no
+* Expand paths:         no
+* Wrap lines:           no
+* Exclude simulator commands:  no
+* Exclude global pins:         no
+* Exclude instance locations:  no
+* Control property name(s):    LVS SPICE
+
+.SUBCKT NMOS25 D G S B
+.ENDS
+.SUBCKT PMOS25 D G S B
+.ENDS
+.SUBCKT NMOS33 D G S B
+.ENDS
+.SUBCKT PMOS33 D G S B
+.ENDS
+
+*************** Subcircuits ***************
+.subckt OR In1 In2 In3 In4 In5 In6 In7 Out Gnd Vdd 
+* Library name: FinalHHAF
+* Cell name: OR
+* View name: schematic
+* PORT=In7 TYPE=In
+* PORT=Out TYPE=Out
+* PORT=Vdd TYPE=Other
+* PORT=In1 TYPE=In
+* PORT=In2 TYPE=In
+* PORT=In3 TYPE=In
+* PORT=In4 TYPE=In
+* PORT=In5 TYPE=In
+* PORT=In6 TYPE=In
+* PORT=Gnd TYPE=Other
+
+MMn1 Out In3 Gnd Gnd NMOS25 w=750n l=250n m=1 ad=487.5f pd=2.8u as=487.5f ps=2.8u nrd=866.66667m nrs=866.66667m mult=1 delvto=0 mulu0=1 $ $x=3500 $y=1600 $w=400 $h=600
+MMn2 Out In7 Gnd Gnd NMOS25 w=750n l=250n m=1 ad=487.5f pd=2.8u as=487.5f ps=2.8u nrd=866.66667m nrs=866.66667m mult=1 delvto=0 mulu0=1 $ $x=9200 $y=1600 $w=400 $h=600
+MMn3 Out In2 Gnd Gnd NMOS25 w=750n l=250n m=1 ad=487.5f pd=2.8u as=487.5f ps=2.8u nrd=866.66667m nrs=866.66667m mult=1 delvto=0 mulu0=1 $ $x=2100 $y=1600 $w=400 $h=600
+MMn4 Out In1 Gnd Gnd NMOS25 w=750n l=250n m=1 ad=487.5f pd=2.8u as=487.5f ps=2.8u nrd=866.66667m nrs=866.66667m mult=1 delvto=0 mulu0=1 $ $x=700 $y=1600 $w=400 $h=600
+MMn5 Out In4 Gnd Gnd NMOS25 w=750n l=250n m=1 ad=487.5f pd=2.8u as=487.5f ps=2.8u nrd=866.66667m nrs=866.66667m mult=1 delvto=0 mulu0=1 $ $x=4900 $y=1600 $w=400 $h=600
+MMn6 Out In5 Gnd Gnd NMOS25 w=750n l=250n m=1 ad=487.5f pd=2.8u as=487.5f ps=2.8u nrd=866.66667m nrs=866.66667m mult=1 delvto=0 mulu0=1 $ $x=6300 $y=1600 $w=400 $h=600
+MMn7 Out In6 Gnd Gnd NMOS25 w=750n l=250n m=1 ad=487.5f pd=2.8u as=487.5f ps=2.8u nrd=866.66667m nrs=866.66667m mult=1 delvto=0 mulu0=1 $ $x=7700 $y=1600 $w=400 $h=600
+MMp1 N_1 In1 Vdd Vdd PMOS25 w=1.5u l=250n m=1 ad=975f pd=4.3u as=975f ps=4.3u nrd=433.33333m nrs=433.33333m mult=1 delvto=0 mulu0=1 $ $x=4600 $y=6000 $w=400 $h=600
+MMp2 N_2 In2 N_1 Vdd PMOS25 w=1.5u l=250n m=1 ad=975f pd=4.3u as=975f ps=4.3u nrd=433.33333m nrs=433.33333m mult=1 delvto=0 mulu0=1 $ $x=4600 $y=5400 $w=400 $h=600
+MMp3 N_3 In3 N_2 Vdd PMOS25 w=1.5u l=250n m=1 ad=975f pd=4.3u as=975f ps=4.3u nrd=433.33333m nrs=433.33333m mult=1 delvto=0 mulu0=1 $ $x=4600 $y=4800 $w=400 $h=600
+MMp4 N_4 In4 N_3 Vdd PMOS25 w=1.5u l=250n m=1 ad=975f pd=4.3u as=975f ps=4.3u nrd=433.33333m nrs=433.33333m mult=1 delvto=0 mulu0=1 $ $x=4600 $y=4200 $w=400 $h=600
+MMp5 N_5 In5 N_4 Vdd PMOS25 w=1.5u l=250n m=1 ad=975f pd=4.3u as=975f ps=4.3u nrd=433.33333m nrs=433.33333m mult=1 delvto=0 mulu0=1 $ $x=4600 $y=3600 $w=400 $h=600
+MMp6 N_6 In6 N_5 Vdd PMOS25 w=1.5u l=250n m=1 ad=975f pd=4.3u as=975f ps=4.3u nrd=433.33333m nrs=433.33333m mult=1 delvto=0 mulu0=1 $ $x=4600 $y=3000 $w=400 $h=600
+MMp7 Out In7 N_6 Vdd PMOS25 w=1.5u l=250n m=1 ad=975f pd=4.3u as=975f ps=4.3u nrd=433.33333m nrs=433.33333m mult=1 delvto=0 mulu0=1 $ $x=4600 $y=2400 $w=400 $h=600
+.ends
+
+
+

@@ -1,0 +1,6 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/Feistel.dv
+dv_start matched                                  
+dv_cell {Feistel} {Feistel} matched
+dv_obj_count -transformed_nets {162 162} -transformed_inst {144 144} -transformed_port {22 22}
+dv_end

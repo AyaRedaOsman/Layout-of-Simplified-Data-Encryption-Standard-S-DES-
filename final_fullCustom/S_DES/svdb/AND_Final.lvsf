@@ -1,0 +1,11 @@
+# Automagically generated file: Please do not edit!
+lvs_LvsOutFile RUNDIR /home/vlsi/Desktop/final_fullCustom/S_DES
+lvs_LvsfVersion 4
+lvs_LvsInputSummary {0 0 0}
+lvs_LvsComparisonSummary {3 0 0 0}
+lvs_SourceCase YES
+lvs_LayoutCase YES
+lvs_LvsOutFile LVS_REPORT AND_Final.lvs.report
+lvs_LvsOutFile SOURCE_NETLIST AND_Final.src.net
+lvs_LvsOutFile RULES_FILE _Generic_250nm_LVS.cal_
+lvs_LvsRunTimes 1716042019 1716042019

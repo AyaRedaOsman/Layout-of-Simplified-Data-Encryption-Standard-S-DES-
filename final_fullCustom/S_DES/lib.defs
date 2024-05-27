@@ -1,0 +1,10 @@
+DEFINE S_DES S_DES
+ASSIGN S_DES libMode shared
+INCLUDE /home/vlsi/CND_Advanced_Full_Custom/lib.defs
+INCLUDE /home/vlsi/LPC_ALU/lib.defs
+DEFINE Midterm_HHAF ../Midterm_HHAF/Midterm_HHAF
+ASSIGN Midterm_HHAF libMode shared
+INCLUDE /home/vlsi/Desktop/final_fullCustom/Midterm_HHAF/lib.defs
+INCLUDE /home/vlsi/Desktop/final_fullCustom/LPC_ALU/lib.defs
+DEFINE FinalHHAF ../FinalHHAF/FinalHHAF
+ASSIGN FinalHHAF libMode shared
